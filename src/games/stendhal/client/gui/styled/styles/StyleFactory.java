@@ -62,16 +62,6 @@ public class StyleFactory {
 			Style create() {
 				Color highlight = new Color(163, 120, 97);
 				Color shadow = new Color(50, 25, 12);
-				return new PixmapStyle("data/gui/panelwood120.jpg",
-						true, highlight, shadow, new Color(107, 72, 50), Color.white);
-			}
-		},
-
-		DARK_WOOD("Ciemne drewno") {
-			@Override
-			Style create() {
-				Color highlight = new Color(163, 120, 97);
-				Color shadow = new Color(50, 25, 12);
 				return new PixmapStyle("data/gui/panelwood119.jpg",
 						true, highlight, shadow, new Color(107, 72, 50), Color.white);
 			}
