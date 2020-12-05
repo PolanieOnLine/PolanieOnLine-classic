@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.2" orientation="orthogonal" renderorder="right-down" width="17" height="13" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="1">
+ <tileset firstgid="1" name="int_wall_dark_red" tilewidth="32" tileheight="32" tilecount="16" columns="4">
+  <image source="../../tileset/building/wall/int_wall_dark_red.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="17" name="int_wall_dark_red_corners" tilewidth="32" tileheight="32" tilecount="16" columns="4">
+  <image source="../../tileset/building/wall/int_wall_dark_red_corners.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="33" name="kafelki_rozne" tilewidth="32" tileheight="32" tilecount="80" columns="16">
+  <image source="../../tileset/pol/domki/podloga/kafelki_rozne.png" width="512" height="160"/>
+ </tileset>
+ <tileset firstgid="113" name="miecze" tilewidth="32" tileheight="32" tilecount="24" columns="6">
+  <image source="../../tileset/pol/wyposazenie/miecze.png" width="192" height="128"/>
+ </tileset>
+ <tileset firstgid="137" name="kuk?y" tilewidth="32" tileheight="32" tilecount="28" columns="7">
+  <image source="../../tileset/furniture/other/mannequins.png" width="224" height="128"/>
+ </tileset>
+ <tileset firstgid="165" name="trzepak" tilewidth="32" tileheight="32" tilecount="6" columns="3">
+  <image source="../../tileset/pol/wyposazenie/trzepak.png" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="171" name="tarcze itp" tilewidth="32" tileheight="32" tilecount="16" columns="4">
+  <image source="../../tileset/item/armor/weapons_for_walls.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="187" name="armor" tilewidth="32" tileheight="32" tilecount="4" columns="4">
+  <image source="../../tileset/item/armor/armor.png" width="128" height="32"/>
+ </tileset>
+ <tileset firstgid="191" name="strzaly" tilewidth="32" tileheight="32" tilecount="2" columns="1">
+  <image source="../../tileset/item/weapon/box_of_weapons.png" width="32" height="64"/>
+ </tileset>
+ <tileset firstgid="193" name="kolizja" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="../../tileset/logic/collision.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="194" name="dark_red_ew" tilewidth="32" tileheight="32" tilecount="12" columns="4">
+  <image source="../../tileset/building/entrance/dark_red_ew.png" width="128" height="96"/>
+ </tileset>
+ <tileset firstgid="206" name="pol_rycerze" tilewidth="32" tileheight="32" tilecount="9" columns="9">
+  <image source="../../tileset/logic/creature/pol_rycerze.png" width="288" height="32"/>
+ </tileset>
+ <layer id="1" name="0_floor" width="17" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACjNmYGAwHsWjeBTTDQMAGs8mbnQDAAA=
+  </data>
+ </layer>
+ <layer id="2" name="1_terrain" width="17" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAChNkYGAQogCLALEkEIsBMTsZWByIJaBmsDGQB7ipaIboIDBDZhCZMVjihVpmSAExFxlYGmqGLBDLUYAVgBgASfDwN3QDAAA=
+  </data>
+ </layer>
+ <layer id="3" name="2_object" width="17" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACmNgoC6oBOIqNLEiNH4xEJdQ0c5DQHyYQjOOAfFxNLFpROpdAqVPAfFpCt2BD6wA4pVY8Coa2gkDB2isnhzQTKL4YAEAcEJ0e3QDAAA=
+  </data>
+ </layer>
+ <layer id="4" name="3_roof" width="17" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACmNgGJ6gn0h1c2nqCgRYCsTLsODldLB7P43VkwNqSRQfTgAA4Rz7anQDAAA=
+  </data>
+ </layer>
+ <layer id="5" name="4_roof_add" width="17" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACmNgGAX0AquBeC0QrwPiNUC8kQwzdgPxHiDeDMR7gXgf1Vw3CugFANxxEQJ0AwAA
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="17" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACmNgGN7gKoni9ACXB9BuaoDBGKZDCQAAHJQNwHQDAAA=
+  </data>
+ </layer>
+ <layer id="7" name="collision" width="17" height="13" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACjvIwMBwcBBhcgA1zEA3h4GBeLOQ1dPSL8SGGy3cQao59IhbXGaSEm4DgQGTkPDedAMAAA==
+  </data>
+ </layer>
+ <layer id="8" name="protection" width="17" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACmNgGAWjYBTQEwAAX9FJ7XQDAAA=
+  </data>
+ </layer>
+</map>

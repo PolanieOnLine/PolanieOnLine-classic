@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creatures xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="stendhal ../../creatures.xsd ">
+
+	<!-- START: kalavan -->
+	<creature name="gospodyni z kalavan">
+		<type class="stendhal/human" subclass="kalavan_housewife" tileid="human_kalavan.png:2"/>
+		<description>Oto gospodyni z kalavan. Mieszka w mieście Kalavan i jest bardzo zła na wrednych ludzi, którzy chcą ukraść jej jedzenie z kuchni i zniszczyć jej piękny ogród!</description>
+		<attributes>
+			<atk value="274"/>
+			<def value="42"/>
+			<hp value="200"/>
+			<speed value="0.8"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="29"/>
+		<experience value="979"/>
+		<respawn value="1310"/>
+		<corpse name="humanoid"/>
+		<drops>
+			<item value="money" quantity="[5,30]" probability="100.0"/>
+			<item value="peleryna" quantity="[1,1]" probability="10.0"/>
+			<item value="dynia" quantity="[1,1]" probability="10.0"/>
+			<item value="tarta z rybnym nadzieniem" quantity="[1,1]" probability="2.0"/>
+			<item value="ziemniaki" quantity="[1,5]" probability="2.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<ai>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="kmieć z kalavan">
+		<type class="stendhal/human" subclass="kalavan_peasant" tileid="human_kalavan.png:3"/>
+		<description>Oto kmieć z kalavan. Pracuje na polach w pobliżu miasta Kalavan. Jak tylko usłyszał o obcych w mieście to czym prędzej wrócił do miasta, aby pomóc mieszkańcom w walce z wrogami!</description>
+		<attributes>
+			<atk value="296"/>
+			<def value="44"/>
+			<hp value="240"/>
+			<speed value="0.9"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="31"/>
+		<experience value="1205"/>
+		<respawn value="1370"/>
+		<corpse name="humanoid"/>
+		<drops>
+			<item value="money" quantity="[3,10]" probability="100.0"/>
+			<item value="buty nabijane ćwiekami" quantity="[1,1]" probability="20.0"/>
+			<item value="pordzewiała kosa" quantity="[1,1]" probability="40.0"/>
+			<item value="pyrlik" quantity="[1,1]" probability="10.0"/>
+			<item value="ziemniaki" quantity="[1,5]" probability="2.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="mądralińska z kalavan">
+		<type class="stendhal/human" subclass="kalavan_wisewoman" tileid="human_kalavan.png:4"/>
+		<description>Oto mądralińska z kalavan. Zazwyczaj siedzi w swoim małym pokoju i robi ręczne robótki, ale teraz potrzebuje wrażeń!</description>
+		<attributes>
+			<atk value="301"/>
+			<def value="46"/>
+			<hp value="250"/>
+			<speed value="0.3"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="33"/>
+		<experience value="1316"/>
+		<respawn value="1380"/>
+		<corpse name="humanoid"/>
+		<drops>
+			<item value="money" quantity="[5,30]" probability="100.0"/>
+			<item value="mocne antidotum" quantity="[1,1]" probability="30.0"/>
+			<item value="szpinak" quantity="[2,4]" probability="40.0"/>
+			<item value="pomidor" quantity="[2,3]" probability="40.0"/>
+			<item value="dynia" quantity="[1,1]" probability="10.0"/>
+			<item value="ziemniaki" quantity="[1,5]" probability="5.0"/>
+			<item value="oliwa z oliwek" quantity="[1,5]" probability="10.0"/>
+			<item value="ocet" quantity="[1,5]" probability="10.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="mieszkaniec kalavan">
+		<type class="stendhal/human" subclass="kalavan_citizen" tileid="human_kalavan.png:1"/>
+		<description>Oto mieszkaniec kalavan. Mieszka w mieście Kalavan i chroni je przed najeźdźcami!</description>
+		<attributes>
+			<atk value="310"/>
+			<def value="56"/>
+			<hp value="210"/>
+			<speed value="0.8"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="34"/>
+		<experience value="1465"/>
+		<respawn value="1410"/>
+		<corpse name="humanoid"/>
+		<drops>
+			<item value="money" quantity="[5,30]" probability="100.0"/>
+			<item value="topór" quantity="[1,1]" probability="20.0"/>
+			<item value="zwój fado" quantity="[1,1]" probability="5.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+	<!-- END: kalavan -->
+
+	<!-- START: monk -->
+	<creature name="mnich">
+		<type class="stendhal/human" subclass="monk" tileid="human.png:4"/>
+		<description>Oto mnich. Mnichowie są bardzo spokojni i pokojowi. Żyją samotnie między sobą, ale nie lubią być niepokojeni przez innych.</description>
+		<attributes>
+			<atk value="261"/>
+			<def value="75"/>
+			<hp value="100"/>
+			<speed value="0.6"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="27"/>
+		<experience value="1160"/>
+		<respawn value="1320"/>
+		<corpse name="humanoid" harmless="cloaked_brown" />
+		<drops>
+			<item value="money" quantity="[3,30]" probability="80.0"/>
+			<item value="butelka wody" quantity="[1,1]" probability="50.0"/>
+			<item value="złoty pyrlik" quantity="[1,1]" probability="3.0"/>
+			<item value="kij" quantity="[1,1]" probability="3.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<damage type="light"/>
+			<susceptibility type="dark" value="1.2"/>
+			<susceptibility type="light" value="0.7"/>
+		</abilities>
+		<ai>
+			<says>
+				<noise state="idle follow fight" value="FINIS... OMNIUM... NUNC... EST..."/>
+				<noise state="idle follow fight" value="Bliski sądny dzień..."/>
+				<noise state="idle follow fight" value="Pokłoń się Mocy!"/>
+				<noise state="death" value="Spotkamy się, gdy czas przeminie!"/>
+				<noise state="target" value="Widzę cię heretyku!"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="heal" params="5,50"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="mnich ciemności">
+		<type class="stendhal/human" subclass="darkmonk" tileid="human.png:2"/>
+		<description>Oto mnich ciemności. Mnichowie ciemności mogą kontrolować ciemne moce i zrobią wszystko, aby usunąć ciebie z ich drogi!</description>
+		<attributes>
+			<atk value="334"/>
+			<def value="102"/>
+			<hp value="120"/>
+			<speed value="0.7"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="39"/>
+		<experience value="2201"/>
+		<respawn value="1500"/>
+		<corpse name="humanoid" harmless="cloaked_black" />
+		<drops>
+			<item value="money" quantity="[5,20]" probability="100.0"/>
+			<item value="bukłak z wodą" quantity="[1,1]" probability="10.0"/>
+			<item value="antidotum" quantity="[1,3]" probability="10.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<damage type="dark"/>
+			<susceptibility type="dark" value="0.6"/>
+			<susceptibility type="light" value="1.5"/>
+		</abilities>
+		<ai>
+			<says>
+				<noise state="idle follow fight" value="Nadchodzi Apokalipsa!"/>
+				<noise state="idle follow fight" value="Niech Moc będzie pochwalona!"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="heal" params="5,50"/>
+		</ai>
+	</creature>
+
+	<creature name="diabelski mnich">
+		<type class="stendhal/undead" subclass="devil_monk" tileid="undead_fallen.png:8"/>
+		<description>Oto diabelski mnich. Jest wyznawcą diabelskiego kultu odprawiającego mroczne obrzędy.</description>
+		<attributes>
+			<atk value="1089"/>
+			<def value="108"/>
+			<hp value="4000"/>
+			<speed value="1.0"/>
+			<size value="2,1"/>
+			<resistance value="100"/>
+			<visibility value="100"/>
+		</attributes>
+		<level value="205"/>
+		<experience value="48862"/>
+		<respawn value="26000"/>
+		<corpse name="humanoid_2x2" harmless="cloaked_red_2x2" />
+		<drops>
+			<item value="money" quantity="[100,600]" probability="100.0"/>
+			<item value="magiczna krew" quantity="[1,1]" probability="100.0"/>
+			<item value="duży eliksir" quantity="[2,4]" probability="20.0"/>
+			<item value="wielki eliksir" quantity="[1,1]" probability="20.0"/>
+			<item value="młot wulkanów" quantity="[1,1]" probability="0.01"/>
+			<item value="czarna kosa" quantity="[1,1]" probability="0.1"/>
+			<item value="piekielny sztylet" quantity="[1,1]" probability="0.5"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<damage type="dark"/>
+			<susceptibility type="dark" value="0.8"/>
+			<susceptibility type="light" value="1.15"/>
+		</abilities>
+		<ai>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="lifesteal" params="0.05"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+	<!-- END: monk -->
+
+	<!-- START: wizard -->
+	<creature name="mała wiedźma">
+		<type class="stendhal/human" subclass="littlewitch" tileid="human_little.png:0"/>
+		<description>Oto mała wiedźma. Są małymi złymi dziewczynkami, które są bardzo niebezpieczne.</description>
+		<attributes>
+			<atk value="246"/>
+			<def value="48"/>
+			<hp value="160"/>
+			<speed value="0.7"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="26"/>
+		<experience value="911"/>
+		<respawn value="1310"/>
+		<corpse name="tiny_humanoid"/>
+		<drops>
+			<item value="money" quantity="[3,27]" probability="90.0"/>
+			<item value="wisienka" quantity="[1,2]" probability="30.0"/>
+			<item value="jabłko" quantity="[1,1]" probability="30.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<ai>
+			<says>
+				<noise state="idle follow fight" value="Czary! Mary!"/>
+				<noise state="idle follow fight" value="Hokus! Pokus!"/>
+			</says>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="mały czarodziej">
+		<type class="stendhal/human" subclass="littlewizard" tileid="human_little.png:1"/>
+		<description>Oto mały czarodziej. Jeszcze nie urósł ale już rzuca mocne zaklęcia.</description>
+		<attributes>
+			<atk value="266"/>
+			<def value="50"/>
+			<hp value="168"/>
+			<speed value="0.5"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="28"/>
+		<experience value="1048"/>
+		<respawn value="1330"/>
+		<corpse name="tiny_humanoid"/>
+		<drops>
+			<item value="money" quantity="[3,27]" probability="90.0"/>
+			<item value="zwój semos" quantity="[1,1]" probability="10.0"/>
+			<item value="magia płomieni" quantity="[1,3]" probability="10.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<ai>
+			<says>
+				<noise state="idle follow fight" value="Abra! Kadabra!"/>
+				<noise state="idle follow fight" value="Hokus! Pokus!"/>
+				<noise state="idle follow fight" value="Czary! Mary!"/>
+			</says>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+	<!-- END: wizard -->
+</creatures>

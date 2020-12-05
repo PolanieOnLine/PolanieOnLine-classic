@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creatures xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="stendhal ../../creatures.xsd ">
+
+	<!-- START: mutanty -->
+	<creature name="dziub dziub">
+		<type class="pol/mutanty" subclass="dziub_dziub" tileid="pol_mutanty.png:0"/>
+		<description>Oto Dziub-Dziub. Właśnie do zobaczyłeś, więc nie zadawaj głupich pytań.</description>
+		<attributes>
+			<atk value="44"/>
+			<def value="9"/>
+			<hp value="250"/>
+			<speed value="0.8"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="3"/>
+		<experience value="15"/>
+		<respawn value="222"/>
+		<corpse name="small_animal"/>
+		<drops>
+			<item value="dziub ptaka" quantity="[1,1]" probability="0.5"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<noise state="idle follow fight" value="Mam dzioba czy dziób?"/>
+				<noise state="idle follow fight" value="Czy ja fruwam, czy latam?"/>
+			</says>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+			<profile name="coward"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="wilczykruk">
+		<type class="pol/mutanty" subclass="wilczykruk" tileid="pol_mutanty.png:1"/>
+		<description/>
+		<attributes>
+			<atk value="166"/>
+			<def value="66"/>
+			<hp value="999"/>
+			<speed value="1.0"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="99"/>
+		<experience value="3333"/>
+		<respawn value="666"/>
+		<corpse name="humanoid"/>
+		<drops>
+			<item value="money" quantity="[1,3]" probability="100.0"/>
+			<item value="butelka wody" quantity="[1,3]" probability="20.0"/>
+			<item value="kieł wilczy" quantity="[1,1]" probability="100.0"/>
+			<item value="pazury wilcze" quantity="[1,5]" probability="100.0"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<noise state="idle follow fight" value="Wrrrrrr!"/>
+				<noise state="idle follow fight" value="Hauuuuu!"/>
+				<noise state="idle follow fight" value="Auuuu!"/>
+				<sound value="pol-growl"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="cerber">
+		<type class="pol/mutanty" subclass="cerber" tileid="pol_mutanty.png:2"/>
+		<description>Oto cerber - strażnik ogni piekielnych. Jego wzrok wypala piętno na twej duszy.</description>
+		<attributes>
+			<atk value="586"/>
+			<def value="30"/>
+			<hp value="582"/>
+			<speed value="0.9"/>
+			<size value="2,1"/>
+		</attributes>
+		<level value="70"/>
+		<experience value="4130"/>
+		<respawn value="99999"/>
+		<corpse name="animal"/>
+		<drops>
+			<item value="money" quantity="[1,1]" probability="100.0"/>
+			<item value="stek" quantity="[1,19]" probability="80.0"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<noise state="idle follow fight" value="Rrraar!"/>
+				<sound value="pol-growl"/>
+			</says>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+			<profile name="patrolling"/>
+			<profile name="heal" params="5,30"/>
+		</ai>
+	</creature>
+	
+	<creature name="gryf">
+		<type class="pol/mutanty" subclass="gryf" tileid="pol_mutanty.png:5"/>
+		<description>Oto mityczny gryf. Lubi polować na duże zwierzyny.</description>
+		<attributes>
+			<atk value="600"/>
+			<def value="44"/>
+			<hp value="700"/>
+			<speed value="0.9"/>
+			<size value="2,2"/>
+		</attributes>
+		<level value="76"/>
+		<experience value="5555"/>
+		<respawn value="77777"/>
+		<corpse name="animal"/>
+		<drops>
+			<item value="money" quantity="[1,55]" probability="100.0"/>
+			<item value="stek" quantity="[1,14]" probability="80.0"/>
+			<item value="piórko" quantity="[1,4]" probability="60.0"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<noise state="idle follow fight" value="Rrraar!"/>
+				<sound value="pol-growl"/>
+			</says>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+			<profile name="patrolling"/>
+			<profile name="heal" params="5,30"/>
+		</ai>
+	</creature>
+	
+	<creature name="harpia">
+		<type class="pol/mutanty" subclass="harpia" tileid="pol_mutanty.png:6"/>
+		<description>Oto harpia. Stwory te są bardzo złośliwe, okrutne i brutalne...</description>
+		<attributes>
+			<atk value="444"/>
+			<def value="55"/>
+			<hp value="570"/>
+			<speed value="0.8"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="63"/>
+		<experience value="3999"/>
+		<respawn value="1630"/>
+		<corpse name="animal"/>
+		<drops>
+			<item value="money" quantity="[1,40]" probability="100.0"/>
+			<item value="udko" quantity="[1,4]" probability="20.0"/>
+			<item value="piórko" quantity="[1,9]" probability="40.0"/>
+			<item value="płaszcz cieni" quantity="[1,1]" probability="0.25"/>
+		</drops>
+		<equips/>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="zółty glut">
+		<type class="pol/mutanty" subclass="yellow_slime" tileid="pol_mutanty.png:3"/>
+		<description>Oto żółty glut. Za nim kleisty ślad.</description>
+		<attributes>
+			<atk value="350"/>
+			<def value="46"/>
+			<hp value="390"/>
+			<speed value="0.6"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="142"/>
+		<experience value="3441"/>
+		<respawn value="42187"/>
+		<corpse name="other"/>
+		<drops>
+			<item value="money" quantity="[9,209]" probability="100.0"/>
+		</drops>
+		<equips/>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="czerwony glut">
+		<type class="pol/mutanty" subclass="red_slime" tileid="pol_mutanty.png:4"/>
+		<description>Oto czerwony glut. Za nim kleisty ślad.</description>
+		<attributes>
+			<atk value="390"/>
+			<def value="49"/>
+			<hp value="7700"/>
+			<speed value="0.6"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="197"/>
+		<experience value="5649"/>
+		<respawn value="75216"/>
+		<corpse name="other"/>
+		<drops>
+			<item value="money" quantity="[99,239]" probability="100.0"/>
+		</drops>
+		<equips/>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+	<!-- END: mutanty -->
+
+	<!-- START: mutanty wielkie -->
+	<creature name="Jožin z lesa">
+		<type class="pol/mutanty_wielkie" subclass="jozin_z_lesa" tileid="pol_mutanty_wielkie.png:0"/>
+		<description/>
+		<attributes>
+			<atk value="415"/>
+			<def value="34"/>
+			<hp value="1000"/>
+			<speed value="0.9"/>
+			<size value="2,2"/>
+		</attributes>
+		<level value="89"/>
+		<experience value="6454"/>
+		<respawn value="1818"/>
+		<corpse name="giant"/>
+		<drops>
+			<item value="money" quantity="[5,40]" probability="100.0"/>
+			<item value="mocna trucizna" quantity="[1,2]" probability="5.0"/>
+			<item value="buty mainiocyjskie" quantity="[1,1]" probability="0.005"/>
+			<item value="nakrapiane jajo" quantity="[1,1]" probability="0.05"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<noise state="idle follow fight" value="tere fere"/>
+				<noise state="idle follow fight" value="tere fere trele morele"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="heal" params="5,50"/>
+			<profile name="patrolling"/>
+			<profile name="poisonous" params="5,mocna trucizna"/>
+		</ai>
+	</creature>
+
+	<creature name="Jožin z bažin">
+		<type class="pol/mutanty_wielkie" subclass="jozin_z_bazin" tileid="pol_mutanty_wielkie.png:1"/>
+		<description/>
+		<attributes>
+			<atk value="415"/>
+			<def value="34"/>
+			<hp value="10000"/>
+			<speed value="0.9"/>
+			<size value="2,2"/>
+		</attributes>
+		<level value="98"/>
+		<experience value="6454"/>
+		<respawn value="1818"/>
+		<corpse name="giant"/>
+		<drops>
+			<item value="money" quantity="[4,50]" probability="100.0"/>
+			<item value="mocna trucizna" quantity="[1,2]" probability="5.0"/>
+			<item value="tarcza mainiocyjska" quantity="[1,1]" probability="0.005"/>
+			<item value="jajo wielkanocne" quantity="[1,1]" probability="0.05"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<noise state="idle follow fight" value="Jožin z bažin močálem se plíží"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="heal" params="15,50"/>
+			<profile name="patrolling"/>
+			<profile name="poisonous" params="10,mocna trucizna"/>
+		</ai>
+	</creature>
+
+	<creature name="coś niszczącego">
+		<type class="pol/mutanty_wielkie" subclass="easer_thing" tileid="pol_mutanty_wielkie.png:3"/>
+		<description/>
+		<attributes>
+			<atk value="804"/>
+			<def value="51"/>
+			<hp value="3350"/>
+			<speed value="1.0"/>
+			<size value="2,2"/>
+		</attributes>
+		<level value="275"/>
+		<experience value="36300"/>
+		<respawn value="21300"/>
+		<corpse name="giant"/>
+		<drops>
+			<item value="wielki eliksir" quantity="[1,3]" probability="100.0"/>
+			<item value="mocne antidotum" quantity="[1,6]" probability="80.0"/>
+			<item value="money" quantity="[100,900]" probability="100.0"/>
+			<item value="buty z zielonego potwora" quantity="[1,1]" probability="12.5"/>
+			<item value="kamienna zbroja" quantity="[1,1]" probability="5.5"/>
+			<item value="ząb potwora" quantity="[1,1]" probability="5.5"/>
+		</drops>
+		<equips/>
+		<ai>
+			<profile name="brave"/>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+			<profile name="heal" params="15,25"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="gigantyczne monstrum">
+		<type class="pol/mutanty_wielkie" subclass="ae_monstrum_gigant" tileid="pol_mutanty_wielkie.png:2"/>
+		<description/>
+		<attributes>
+			<atk value="1632"/>
+			<def value="49"/>
+			<hp value="4444"/>
+			<speed value="1.0"/>
+			<size value="2,2"/>
+		</attributes>
+		<level value="199"/>
+		<experience value="65432"/>
+		<respawn value="12345"/>
+		<corpse name="giant_humanoid"/>
+		<drops>
+			<item value="wielki eliksir" quantity="[1,3]" probability="50.0"/>
+			<item value="money" quantity="[9,999]" probability="100.0"/>
+			<item value="rękawice cieni" quantity="[1,1]" probability="1.0"/>
+			<item value="miecz cieni" quantity="[1,1]" probability="5.0"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<noise state="idle follow fight" value="Wydaj swój ostatni oddech!"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+			<profile name="heal" params="15,50"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+	<!-- END: mutanty wielkie -->
+</creatures>

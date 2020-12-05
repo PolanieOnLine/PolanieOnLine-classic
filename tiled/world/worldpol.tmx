@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="52" height="68" tilewidth="64" tileheight="64" infinite="0" nextlayerid="71" nextobjectid="1">
+ <tileset firstgid="1" name="empty" tilewidth="64" tileheight="64" tilecount="1" columns="1">
+  <image source="empty.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="2" name="0_desert_pyramid_nw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_desert_pyramid_nw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="18" name="0_desert_pyramid_ne" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_desert_pyramid_ne.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="34" name="0_desert_pyramid_sw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_desert_pyramid_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="50" name="0_desert_pyramid_se" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_desert_pyramid_se.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="66" name="0_dragon_knights_c" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_dragon_knights_c.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="82" name="0_dragon_knights_s" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_dragon_knights_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="98" name="0_dragon_knights_sw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_dragon_knights_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="114" name="0_dragon_knights_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_dragon_knights_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="130" name="0_dragon_knights_wieliczka" tilewidth="64" tileheight="64" tilecount="0" columns="4">
+  <image source="0_dragon_knights_wieliczka.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="130" name="0_dragon_land_n" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_dragon_land_n.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="146" name="0_dragon_land_s" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_dragon_land_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="162" name="0_koscielisko_e" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_koscielisko_e.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="178" name="0_koscielisko_ne" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_koscielisko_ne.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="194" name="0_koscielisko_se" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_koscielisko_se.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="210" name="0_krakow_e" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_e.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="226" name="0_krakow_n" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_n.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="242" name="0_krakow_ne" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_ne.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="258" name="0_krakow_nw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_nw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="274" name="0_krakow_rynek" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_rynek.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="290" name="0_krakow_s" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="306" name="0_krakow_se" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_se.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="322" name="0_krakow_sw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="338" name="0_krakow_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="354" name="0_krakow_wawel_e" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_wawel_e.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="370" name="0_krakow_wawel_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_wawel_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="386" name="0_krakow_wisla" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_wisla.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="402" name="0_krakow_wisla_e" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_wisla_e.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="418" name="0_krakow_wisla_nw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_wisla_nw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="434" name="0_krakow_wisla_s" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_wisla_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="450" name="0_krakow_wisla_se" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_wisla_se.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="466" name="0_krakow_wisla_sw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_wisla_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="482" name="0_krakow_wisla_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_wisla_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="498" name="0_tatry_dolina_koscieliska_c" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_dolina_koscieliska_c.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="514" name="0_tatry_dolina_koscieliska_n" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_dolina_koscieliska_n.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="530" name="0_warszawa_sw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_warszawa_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="546" name="0_wieliczka_c" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_wieliczka_c.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="562" name="0_wieliczka_e" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_wieliczka_e.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="578" name="0_wieliczka_e2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_wieliczka_e2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="594" name="0_wieliczka_n" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_wieliczka_n.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="610" name="0_wieliczka_ne" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_wieliczka_ne.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="626" name="0_wieliczka_ne2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_wieliczka_ne2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="642" name="0_wieliczka_nw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_wieliczka_nw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="658" name="0_wieliczka_s" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_wieliczka_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="674" name="0_wieliczka_se" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_wieliczka_se.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="690" name="0_wieliczka_se2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_wieliczka_se2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="706" name="0_wieliczka_sw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_wieliczka_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="722" name="0_wieliczka_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_wieliczka_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="738" name="0_zakopane_c" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_zakopane_c.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="754" name="0_zakopane_e" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_zakopane_e.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="770" name="0_zakopane_n" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_zakopane_n.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="786" name="0_zakopane_ne" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_zakopane_ne.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="802" name="0_zakopane_nw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_zakopane_nw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="818" name="0_zakopane_s" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_zakopane_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="834" name="0_zakopane_se" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_zakopane_se.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="850" name="0_zakopane_sw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_zakopane_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="866" name="0_zakopane_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_zakopane_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="882" name="1_football_playground" tilewidth="64" tileheight="64" tilecount="0" columns="2">
+  <image source="1_football_playground.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="882" name="1_koscielisko_podzamcze_zrc" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="1_koscielisko_podzamcze_zrc.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="898" name="1_koscielisko_zamek" tilewidth="64" tileheight="64" tilecount="0" columns="4">
+  <image source="1_koscielisko_zamek.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="898" name="6_clouds" tilewidth="64" tileheight="64" tilecount="0" columns="1">
+  <image source="6_clouds.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="898" name="sub_1_desert_corridor" tilewidth="64" tileheight="64" tilecount="4" columns="2">
+  <image source="sub_1_desert_corridor.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="902" name="sub_1_dragon_knights_springs" tilewidth="64" tileheight="64" tilecount="1" columns="1">
+  <image source="sub_1_dragon_knights_springs.png" width="90" height="66"/>
+ </tileset>
+ <tileset firstgid="903" name="sub_1_wieliczka_salt_mines_c" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_wieliczka_salt_mines_c.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="919" name="sub_1_wieliczka_salt_mines_e" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_wieliczka_salt_mines_e.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="935" name="sub_1_wieliczka_salt_mines_e2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_wieliczka_salt_mines_e2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="951" name="sub_1_wieliczka_salt_mines_e3" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_wieliczka_salt_mines_e3.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="967" name="sub_1_wieliczka_salt_mines_s" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_wieliczka_salt_mines_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="983" name="sub_1_wieliczka_salt_mines_se" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_wieliczka_salt_mines_se.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="999" name="sub_1_wieliczka_salt_mines_se2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_wieliczka_salt_mines_se2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1015" name="sub_1_wieliczka_salt_mines_se3" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_wieliczka_salt_mines_se3.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1031" name="sub_1_wieliczka_salt_mines_sw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_wieliczka_salt_mines_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1047" name="sub_1_wieliczka_salt_mines_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_wieliczka_salt_mines_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1063" name="sub_1_zakopane_cave" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_zakopane_cave.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1079" name="sub_2_zakopane_cave" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_2_zakopane_cave.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1095" name="sub_3_zakopane_mines" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_3_zakopane_mines.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1111" name="sub_1_desert_fire_pyramid" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_desert_fire_pyramid.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1127" name="sub_1_desert_pyramid" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_desert_pyramid.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1143" name="sub_2_desert_black_river_n" tilewidth="64" tileheight="64" tilecount="4" columns="2">
+  <image source="sub_2_desert_black_river_n.png" width="160" height="160"/>
+ </tileset>
+ <tileset firstgid="1147" name="sub_2_desert_black_river_s" tilewidth="64" tileheight="64" tilecount="4" columns="2">
+  <image source="sub_2_desert_black_river_s.png" width="160" height="160"/>
+ </tileset>
+ <tileset firstgid="1151" name="0_koscielisko_nw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_koscielisko_nw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1167" name="0_koscielisko_sw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_koscielisko_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1183" name="0_koscielisko_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_koscielisko_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1199" name="0_tatry_dolina_koscieliska_s" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_dolina_koscieliska_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1215" name="0_tatry_dolina_rybiego_potoku_n" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_dolina_rybiego_potoku_n.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1231" name="jaka_mapa" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="jaka_mapa.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1247" name="0_tatry_dolina_koscieliska_las_nw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_dolina_koscieliska_las_nw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1263" name="0_tatry_dolina_koscieliska_las_sw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_dolina_koscieliska_las_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1279" name="0_tatry_dolina_koscieliska_las_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_dolina_koscieliska_las_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1295" name="logopol_pra" tilewidth="64" tileheight="64" tilecount="384" columns="32">
+  <image source="logopol_pra.png" width="2048" height="768"/>
+ </tileset>
+ <tileset firstgid="1679" name="0_tatry_dolina_mietusia" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_dolina_mietusia.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1695" name="0_tatry_dolina_rybiego_potoku_s" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_dolina_rybiego_potoku_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1711" name="0_tatry_dolina_malej_laki" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_dolina_malej_laki.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1727" name="0_tatry_kasprowy_wierch" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_kasprowy_wierch.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1743" name="0_tatry_giewont_sw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_giewont_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1759" name="0_tatry_giewont_se" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_giewont_se.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1775" name="0_tatry_dolina_strazyska" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_dolina_strazyska.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1791" name="0_tatry_kuznice" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_tatry_kuznice.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1807" name="0_zakopane_e2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_zakopane_e2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1823" name="0_zakopane_s_e2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_zakopane_s_e2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1839" name="0_zakopane_n_e2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_zakopane_n_e2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1855" name="0_dragon_knights_forest_s" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_dragon_knights_forest_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1871" name="0_dragon_knights_forest_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_dragon_knights_forest_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1887" name="0_dragon_knights_forest_sw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_dragon_knights_forest_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="1903" name="logopol" tilewidth="64" tileheight="64" tilecount="336" columns="28">
+  <image source="logopol.png" width="1792" height="768"/>
+ </tileset>
+ <tileset firstgid="2239" name="sub_1_krakow_smok_wawelski_cave" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_krakow_smok_wawelski_cave.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2255" name="sub_1_dragon_cave" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_dragon_cave.png" width="300" height="300"/>
+ </tileset>
+ <tileset firstgid="2271" name="sub_1_koscielisko_kopalnia" tilewidth="64" tileheight="64" tilecount="4" columns="2">
+  <image source="sub_1_koscielisko_kopalnia.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="2275" name="sub_1_krakow_cave_ne" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_krakow_cave_ne.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2291" name="sub_1_krakow_cave_nw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_krakow_cave_nw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2307" name="sub_1_krakow_cave_se" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_krakow_cave_se.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2323" name="sub_1_krakow_canals" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_krakow_canals.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2339" name="sub_1_koscielisko_coalmine" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="sub_1_koscielisko_coalmine.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_1_koscielisko_-1_cave" tilewidth="64" tileheight="64" tilecount="0" columns="2">
+  <image source="sub_1_koscielisko_-1_cave.png" width="128" height="80"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_2_koscielisko_-2_cave" tilewidth="64" tileheight="64" tilecount="0" columns="1">
+  <image source="sub_2_koscielisko_-2_cave.png" width="72" height="128"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_3_koscielisko_-3_cave" tilewidth="64" tileheight="64" tilecount="0" columns="2">
+  <image source="sub_3_koscielisko_-3_cave.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_1_wieliczka_salt_mines_se" tilewidth="64" tileheight="64" tilecount="0" columns="4">
+  <image source="../../../PolskaGRA-VERSION_RELEASE_0_01/tiled/world/sub_1_wieliczka_salt_mines_se.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_1_wieliczka_salt_mines_se3" tilewidth="64" tileheight="64" tilecount="0" columns="4">
+  <image source="../../../PolskaGRA-VERSION_RELEASE_0_01/tiled/world/sub_1_wieliczka_salt_mines_se3.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_1_wieliczka_salt_mines_e2" tilewidth="64" tileheight="64" tilecount="0" columns="4">
+  <image source="../../../PolskaGRA-VERSION_RELEASE_0_01/tiled/world/sub_1_wieliczka_salt_mines_e2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_1_wieliczka_salt_mines_se2" tilewidth="64" tileheight="64" tilecount="0" columns="4">
+  <image source="../../../PolskaGRA-VERSION_RELEASE_0_01/tiled/world/sub_1_wieliczka_salt_mines_se2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_1_wieliczka_salt_mines_w" tilewidth="64" tileheight="64" tilecount="0" columns="4">
+  <image source="../../../PolskaGRA-VERSION_RELEASE_0_01/tiled/world/sub_1_wieliczka_salt_mines_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_1_wieliczka_salt_mines_c" tilewidth="64" tileheight="64" tilecount="0" columns="4">
+  <image source="../../../PolskaGRA-VERSION_RELEASE_0_01/tiled/world/sub_1_wieliczka_salt_mines_c.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_1_wieliczka_salt_mines_e3" tilewidth="64" tileheight="64" tilecount="0" columns="4">
+  <image source="../../../PolskaGRA-VERSION_RELEASE_0_01/tiled/world/sub_1_wieliczka_salt_mines_e3.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_1_wieliczka_salt_mines_sw" tilewidth="64" tileheight="64" tilecount="0" columns="4">
+  <image source="../../../PolskaGRA-VERSION_RELEASE_0_01/tiled/world/sub_1_wieliczka_salt_mines_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_1_wieliczka_salt_mines_s" tilewidth="64" tileheight="64" tilecount="0" columns="4">
+  <image source="../../../PolskaGRA-VERSION_RELEASE_0_01/tiled/world/sub_1_wieliczka_salt_mines_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_1_wieliczka_salt_mines_e" tilewidth="64" tileheight="64" tilecount="0" columns="4">
+  <image source="../../../PolskaGRA-VERSION_RELEASE_0_01/tiled/world/sub_1_wieliczka_salt_mines_e.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_1_dragon_cave" tilewidth="64" tileheight="64" tilecount="0" columns="5">
+  <image source="../../../PolskaGRA-VERSION_RELEASE_0_01/tiled/world/sub_1_dragon_cave.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="2355" name="sub_1_dragon_knights_springs" tilewidth="64" tileheight="64" tilecount="0" columns="2">
+  <image source="../../../PolskaGRA-VERSION_RELEASE_0_01/tiled/world/sub_1_dragon_knights_springs.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="2355" name="0_gdansk_forest_s" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2371" name="0_gdansk_forest_se" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest_se.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2387" name="0_gdansk_forest_sw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest_sw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2403" name="0_gdansk_forest_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2419" name="0_gdansk_road_n" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_road_n.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2435" name="0_gdansk_road_s" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_road_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2451" name="0_gdansk_city_n" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_city_n.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2467" name="0_gdansk_city_ne" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_city_ne.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2483" name="0_gdansk_city_nw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_city_nw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2499" name="0_gdansk_forest" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2515" name="0_gdansk_forest_e" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest_e.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2531" name="0_krakow_n_w2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_n_w2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2547" name="0_gdansk_forest_s2_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest_s2_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2563" name="0_krakow_wisla_e2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_wisla_e2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2579" name="0_krakow_wawel_e2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_wawel_e2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2595" name="0_dragon_knights_forest" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_dragon_knights_forest.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2611" name="0_warszawa_c" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_warszawa_c.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2627" name="0_warszawa_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_warszawa_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2643" name="0_warszawa_sww" tilewidth="64" tileheight="64" tilecount="0" columns="4">
+  <image source="0_warszawa_sww.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2643" name="0_warszawa_s" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_warszawa_s.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2659" name="0_warszawa_n" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_warszawa_n.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2675" name="0_warszawa_ne" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_warszawa_ne.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2691" name="0_warszawa_e" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_warszawa_e.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2707" name="0_warszawa_se" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_warszawa_se.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2723" name="0_gdansk_outside" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_outside.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2739" name="0_gdansk_forest_s_w2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest_s_w2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2755" name="0_gdansk_forest_s2_w2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest_s2_w2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2771" name="0_gdansk_forest_w2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest_w2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2787" name="0_gdansk_coast_e" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_coast_e.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2803" name="0_gdansk_coast_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_coast_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2819" name="0_gdansk_forest_e2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest_e2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2835" name="0_gdansk_forest_e3" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest_e3.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2851" name="0_krakow_swamp" tilewidth="64" tileheight="64" tilecount="32" columns="8">
+  <image source="0_krakow_swamp.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="2883" name="0_krakow_w2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_w2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2899" name="0_krakow_swamp_nw" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_swamp_nw.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2915" name="0_krakow_swamp_ne" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_krakow_swamp_ne.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2931" name="0_gdansk_forest_s3_w" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest_s3_w.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2947" name="0_gdansk_forest_s3_w2" tilewidth="64" tileheight="64" tilecount="16" columns="4">
+  <image source="0_gdansk_forest_s3_w2.png" width="256" height="256"/>
+ </tileset>
+ <layer id="57" name="Sub 7" width="52" height="68">
+  <data encoding="base64" compression="zlib">
+   eAHt0gEJAAAMAjDtX9rnOBMMoCz5ld4c9QEDDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAwADWRg2d
+  </data>
+ </layer>
+ <layer id="58" name="Sub 6" width="52" height="68">
+  <data encoding="base64" compression="zlib">
+   eAHt0zEKgDAQRFG9/6XV9vcDKi+QYpohy74cx7/OeY/z5dttfHmW5+095nmXT/t51z76P+zHfmpimXnjbemr3bzxVhPLzBtvS1/t5o23mlhm3nhb+mo3b7zVxDLzxtvSV7t5460mlpk33pa+2s0bbzWxzLzxtvTVbt54q4ll5o23pa9288ZbTSwzb7wtfbWbN95qYpl5423pq9288VYTy8wbb0tf7f67twu4agyR
+  </data>
+ </layer>
+ <layer id="59" name="Sub 5" width="52" height="68">
+  <data encoding="base64" compression="zlib">
+   eAHt0zEKgDAQRFG9/6XV9vcDKi+QYpohy74cx7/OeY/z5dttfHmW5+095nmXT/t51z76P+zHfmpimXnjbemr3bzxVhPLzBtvS1/t5o23mlhm3nhb+mo3b7zVxDLzxtvSV7t5460mlpk33pa+2s0bbzWxzLzxtvTVbt54q4ll5o23pa9288ZbTSwzb7wtfbWbN95qYpl5423pq9288VYTy8wbb0tf7f67twu4agyR
+  </data>
+ </layer>
+ <layer id="60" name="Sub 4" width="52" height="68">
+  <data encoding="base64" compression="zlib">
+   eAHt0zEKgDAQRFG9/6XV9vcDKi+QYpohy74cx7/OeY/z5dttfHmW5+095nmXT/t51z76P+zHfmpimXnjbemr3bzxVhPLzBtvS1/t5o23mlhm3nhb+mo3b7zVxDLzxtvSV7t5460mlpk33pa+2s0bbzWxzLzxtvTVbt54q4ll5o23pa9288ZbTSwzb7wtfbWbN95qYpl5423pq9288VYTy8wbb0tf7f67twu4agyR
+  </data>
+ </layer>
+ <layer id="61" name="Sub 3" width="52" height="68">
+  <data encoding="base64" compression="zlib">
+   eAHtk1mKAzEMRB2Yu2WWZLZMcv+jRP1REArPR8cUcZrXIIRsqySh161t69vVOM9svo1nnmXp3T/mmYtP9jPXPvz/YD/sx5lIxvAGb0m+XBve4M2ZSMbwBm9Jvlwb3uDNmUjG8AZvSb5cG97gzZlIxvAGb0m+XBve4M2ZSMbwBm9Jvlwb3uDNmUjG8AZvSb5c+z/edO7vZ4/Vt7z69Vjns3v1LT/ar3TkR/XW5quu/Np8fy8deb9Px6orP1pPOvKjemvzVVd+bb6/37+09lr2VvZe5vfpWHPIj9RbND5qhkPZsexzA/N81QzfZT9lvxuY51Qz/JWdyy4bmEfcLn6E3Xtzb+s/qod7e+/lMc9jOOrtonfGfthPj4vUGbzBW4qtni68wVuPi9QZvMFbiq2ervN2BSaMEZI=
+  </data>
+ </layer>
+ <layer id="62" name="Sub 2" width="52" height="68">
+  <data encoding="base64" compression="zlib">
+   eAHtmtlqxDAMRVPoP3XfO/NL3Rfoj1eGHrgYQ8kYM72uBsRRotjWISJPsyz/43cQmk7x21v5qy4Ph8vyGPEUoT26+hSP54jXSXxeflw+JvN5m8SneLxHfE7iU+asuHxN4qPfNM35vuk9xxwP6OigPeMBteaY4wEdHbRnPKDWHHM8oKOD9owH1Jpjjgd0dNCe8YBac8zxgI4O2jMeUGuOOR7Q0UF7xgNqzTHHAzo6aM94QK055nhARwftGQ+oNcccD+jooD3jAbXmmOMBHR20Zzyg1hxzPKCjg/aMB9SaY44HdHTQnvGAWnPM8YCODtozHlBrjjke0NFBe8YDas0xxwM6OmjPeECtOeZ4QEcH7RkPqDXHHA/o6KA94wHrml475HhA7bnc02uHHA/Y2zP7wN791q7nXLh2ff08+8C6Pvqac2HveewDe/dbu55z4dr19fNH8b+G44iTiNPqPw71syOu8YA9Z5Q9zsLhPOIi4nICn6twuI64ibidwOcuHO4jNhHbCXyY28Ke2d11rZ6/rx527b21Ln32M0etd9G6l+8n309rLkbdy3nLeRs1W619c95y3lpzMepezlvO26jZau1bz9s3hpoZaA==
+  </data>
+ </layer>
+ <layer id="63" name="Sub 1" width="52" height="68">
+  <data encoding="base64" compression="zlib">
+   eAHtmWVy3EAQRsexk9hhZiYzBq4SZmbOAQLnCjNcwQ4zM+fpR1cpU/LKA9ZK8kzVq15ptuGbbtmqWqWG1qpBbp44XavUGeivprTu9OdXrftn0XKuRHrSzrFo/Smbnt11Su2BvbAPVsMaWAvrIG2lnUfW+/up+QAchEOwHjbARtgEaSvretPyHabmI3AUjsFm2AJbYRukrbT4We8fp+YTcBJOwXbYATthF2Rdj+98ej98x886XtCT75kM/Qn9yfJvQpi3MG9h3uxnIDw/9meXxdyF/gyt/kxuUGoKTIVpoK/Bnjnf+aajYQbMhFkl0DMbDXNgLswrgZ75aFgAC2FRCfR8rFfqE3yGL/AQHsFjeAJFe36+UvM3+A4/4Ck8g+fwAoqm5yc1/4Lf8Adewit4DW+gaHr+UrPiuamBYfCW63fwHj5A0fScp+YLcBEuQS2a6mA4jICi6bmMhitwFa7BSDTUQwOMStCj//+Lrl006/FcYkW+19FwA27CLRiNhjEwFsYVUM9tNNyBu3APxqNhAkyESQPU49Ij3/3R+yvx9ftyLftxK3s2Nh4n+mwTw8VHz+9agx7PpTYbXz1/0PP/TOnnY3PGLj56/rL0x+VM4r76+cT3svgs+X3lknhifcWtVhzRIVbq0K/lft6t1C3WtV6JI9Y1nqm/5BWb5N/Le0sfJO3p9ySOWH1/sK8lr9ikfPfR8qCgehbzzrgElsKyhPfHJL3xe4385t8EzdBi8fu/nKsv24iGJmiGFkM9UQ2taGiDdujIgZ5WNLRBO3RY6OlEQxd0Q08O9HSioQu6ocdCz3I0rICVsCoHeuLPgulnfeZN/aPv+142Nfj0CXoqn4DPs7aJVbk6812bGnz6mFdc2cNnbdWIpaurRg0+cwY9A3vP9nnmJrFCf0J/TObF9bth3sK8uc6QiX/Z5+0fQYpRDA==
+  </data>
+ </layer>
+ <layer id="64" name="Floor" width="52" height="68">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer id="65" name="Sky 1" width="52" height="68" visible="0">
+  <data encoding="base64" compression="zlib">
+   eAHt00kKhEAQRNEEb+zYDj14845DuNDiJfx9xYOqcgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQI3EWg76qGNKYpPf3mbFjSK60N7NmyYU9Hejew55MN3/RLZwN7nv5fvJ8AAQIECBAgQIAAAQIECBC4XuAPkxMHyQ==
+  </data>
+ </layer>
+ <layer id="66" name="Sky 2" width="52" height="68" visible="0">
+  <data encoding="base64" compression="zlib">
+   eAHt0AENAAAAwqD3T20PBxEoDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMDA38AAN0AAAQ==
+  </data>
+ </layer>
+ <layer id="67" name="Sky 3" width="52" height="68" visible="0">
+  <data encoding="base64" compression="zlib">
+   eAHt0AENAAAAwqD3T20PBxEoDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMDA38AAN0AAAQ==
+  </data>
+ </layer>
+ <layer id="68" name="Sky 4" width="52" height="68" visible="0">
+  <data encoding="base64" compression="zlib">
+   eAHt0AENAAAAwqD3T20PBxEoDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMDA38AAN0AAAQ==
+  </data>
+ </layer>
+ <layer id="69" name="Sky 5" width="52" height="68" visible="0">
+  <data encoding="base64" compression="zlib">
+   eAHt0AENAAAAwqD3T20PBxEoDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMDA38AAN0AAAQ==
+  </data>
+ </layer>
+ <layer id="70" name="Sky 6" width="52" height="68" visible="0">
+  <data encoding="base64" compression="zlib">
+   eAHt0AENAAAAwqD3T20PBxEoDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMDA38AAN0AAAQ==
+  </data>
+ </layer>
+</map>

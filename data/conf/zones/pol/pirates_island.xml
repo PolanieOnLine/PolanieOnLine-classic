@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zones xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="stendhal ../../zones.xsd ">
+	<!--
+		** Load zones. Written from left to right and from top to bottom. **
+		Please respect it!
+	-->
+
+	<!-- Ground level -->
+
+	<!-- Island W -->
+	<zone name="0_pirates_island_w" level="0" x="513184" y="1024" file="Level 0/pirates/island_w.tmx">
+		<attributes>
+			<parameter name="color_method">time</parameter>
+			<parameter name="weather">varying</parameter>
+		</attributes>
+		<entity x="1" y="1">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.BackgroundMusicSource">
+				<parameter name="sound">pol-piracka-wyspa</parameter>
+				<parameter name="volume">80</parameter>
+			</implementation>
+		</entity>
+
+		<entity x="74" y="56">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.PeriodicAmbientSoundSource">
+				<parameter name="sound">coins-1, coins-2</parameter>
+				<parameter name="min">60</parameter>
+				<parameter name="max">120</parameter>
+				<parameter name="radius">15</parameter>
+				<parameter name="volume">10</parameter>
+			</implementation>
+		</entity>
+
+		<entity x="68" y="54">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">10</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+		<entity x="82" y="59">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">10</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+		<entity x="80" y="61">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">10</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+
+		<portal x="62" y="58" ref="th_entrance">
+			<destination zone="int_pirates_island_tiny_house" ref="th_exit"/>
+		</portal>
+
+		<portal x="86" y="63" ref="tw1_entrance">
+			<destination zone="int_pirates_island_tavern_0" ref="tw1_exit"/>
+		</portal>
+		<portal x="90" y="63" ref="tw2_entrance">
+			<destination zone="int_pirates_island_tavern_0" ref="tw2_exit"/>
+		</portal>
+
+		<portal x="100" y="50" ref="wp_entrance">
+			<destination zone="int_pirates_island_weaponshop" ref="wp_exit"/>
+		</portal>
+
+		<portal x="109" y="45" ref="b1_entrance">
+			<destination zone="int_pirates_island_bar" ref="b1_exit"/>
+		</portal>
+		<portal x="110" y="45" ref="b2_entrance">
+			<destination zone="int_pirates_island_bar" ref="b2_exit"/>
+		</portal>
+
+		<portal x="58" y="48" ref="sk_entrance">
+			<destination zone="int_pirates_island_treasury" ref="sk_exit"/>
+		</portal>
+
+		<portal x="116" y="44" ref="cave_entrance">
+			<destination zone="-1_pirates_island_cave_w" ref="cave_exit"/>
+		</portal>
+	</zone>
+
+	<!-- Island E -->
+	<zone name="0_pirates_island_e" level="0" x="513312" y="1024" file="Level 0/pirates/island_e.tmx">
+		<configurator class-name="games.pol.server.maps.pirate_island.ship.FerryConveyerNPC"/>
+		<attributes>
+			<parameter name="color_method">time</parameter>
+			<parameter name="weather">varying</parameter>
+		</attributes>
+		<entity x="1" y="1">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.BackgroundMusicSource">
+				<parameter name="sound">pol-piracka-wyspa</parameter>
+				<parameter name="volume">80</parameter>
+			</implementation>
+		</entity>
+		
+		<entity x="64" y="54">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.PeriodicAmbientSoundSource">
+				<parameter name="sound">water-2, water-3</parameter>
+				<parameter name="min">1</parameter>
+				<parameter name="max">1</parameter>
+				<parameter name="radius">28</parameter>
+			</implementation>
+		</entity>
+		<entity x="88" y="54">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.PeriodicAmbientSoundSource">
+				<parameter name="sound">water-2, water-3</parameter>
+				<parameter name="min">1</parameter>
+				<parameter name="max">1</parameter>
+				<parameter name="radius">21</parameter>
+			</implementation>
+		</entity>
+
+		<portal x="93" y="47" ref="cave1_entrance">
+			<destination zone="-1_pirates_island_cave_e" ref="cave1_exit"/>
+		</portal>
+
+		<portal x="86" y="78" ref="cave2_entrance">
+			<destination zone="-1_pirates_island_cave_e" ref="cave2_exit"/>
+		</portal>
+	</zone>
+
+	<!-- Level -1 -->
+
+	<!-- Cave W -->
+	<zone name="-1_pirates_island_cave_w" level="-1" x="513184" y="1024" file="Level -1/pirates/cave_w.tmx">
+		<attributes>
+			<parameter name="color_method">dark</parameter>
+		</attributes>
+		<entity x="1" y="1">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.BackgroundMusicSource">
+				<parameter name="sound">pol-pirackie-jaskinie2</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+
+		<portal x="102" y="63" ref="cave_up">
+			<destination zone="-2_pirates_island_cave_w" ref="cave_down"/>
+		</portal>
+
+		<portal x="113" y="17" ref="cave_exit">
+			<destination zone="0_pirates_island_w" ref="cave_entrance"/>
+		</portal>
+	</zone>
+
+	<!-- Cave E -->
+	<zone name="-1_pirates_island_cave_e" level="-1" x="513312" y="1024" file="Level -1/pirates/cave_e.tmx">
+		<attributes>
+			<parameter name="color_method">dark</parameter>
+		</attributes>
+		<entity x="1" y="1">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.BackgroundMusicSource">
+				<parameter name="sound">pol-pirackie-jaskinie2</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+
+		<portal x="83" y="13" ref="cave1_exit">
+			<destination zone="0_pirates_island_e" ref="cave1_entrance"/>
+		</portal>
+
+		<portal x="78" y="109" ref="cave2_exit">
+			<destination zone="0_pirates_island_e" ref="cave2_entrance"/>
+		</portal>
+	</zone>
+	
+	<!-- Level -2 -->
+
+	<!-- Cave W -->
+	<zone name="-2_pirates_island_cave_w" level="-2" x="513184" y="1024" file="Level -2/pirates/cave_w.tmx">
+		<attributes>
+			<parameter name="color_method">dark</parameter>
+		</attributes>
+		<entity x="1" y="1">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.BackgroundMusicSource">
+				<parameter name="sound">pol-pirackie-jaskinie2</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+
+		<portal x="104" y="20" ref="cave_down">
+			<destination zone="-1_pirates_island_cave_w" ref="cave_up"/>
+		</portal>
+	</zone>
+
+	<!-- Cave E -->
+	<zone name="-2_pirates_island_cave_e" level="-2" x="513312" y="1024" file="Level -2/pirates/cave_e.tmx">
+		<attributes>
+			<parameter name="color_method">dark</parameter>
+		</attributes>
+		<entity x="1" y="1">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.BackgroundMusicSource">
+				<parameter name="sound">pol-pirackie-jaskinie2</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+	</zone>
+
+	<!-- Level -3 -->
+
+	<!-- Cave W -->
+	<zone name="-3_pirates_island_cave_w" level="-3" x="513184" y="1024" file="Level -3/pirates/cave_w.tmx">
+		<attributes>
+			<parameter name="color_method">dark</parameter>
+		</attributes>
+		<entity x="1" y="1">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.BackgroundMusicSource">
+				<parameter name="sound">pol-pirackie-jaskinie2</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+	</zone>
+
+	<!-- Cave E -->
+	<zone name="-3_pirates_island_cave_e" level="-3" x="513312" y="1024" file="Level -3/pirates/cave_e.tmx">
+		<attributes>
+			<parameter name="color_method">dark</parameter>
+		</attributes>
+		<entity x="1" y="1">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.BackgroundMusicSource">
+				<parameter name="sound">pol-pirackie-jaskinie2</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+	</zone>
+
+	<!-- interiors -->
+
+	<!-- Ship -->
+	<zone name="int_pirate_ship" file="interiors/pirates/ship.tmx">
+		<configurator class-name="games.pol.server.maps.pirate_island.ship.CoastConveyerNPC"/>
+		<configurator class-name="games.pol.server.maps.pirate_island.ship.CaptainNPC"/>
+		<attributes>
+			<parameter name="color_method">time</parameter>
+			<parameter name="weather">varying</parameter>
+		</attributes>
+		
+		<entity x="23" y="36">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.PeriodicAmbientSoundSource">
+				<parameter name="sound">water-2, wave-11</parameter>
+				<parameter name="min">1</parameter>
+				<parameter name="max">1</parameter>
+				<parameter name="radius">10</parameter>
+			</implementation>
+		</entity>
+		<entity x="30" y="36">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.PeriodicAmbientSoundSource">
+				<parameter name="sound">water-3, wave-11</parameter>
+				<parameter name="min">1</parameter>
+				<parameter name="max">1</parameter>
+				<parameter name="radius">10</parameter>
+			</implementation>
+		</entity>
+		<entity x="16" y="36">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.PeriodicAmbientSoundSource">
+				<parameter name="sound">wave-11</parameter>
+				<parameter name="min">1</parameter>
+				<parameter name="max">2</parameter>
+				<parameter name="radius">8</parameter>
+			</implementation>
+		</entity>
+	</zone>
+
+	<!-- skarbiec -->
+	<zone name="int_pirates_island_treasury" file="interiors/pirates/skarbiec.tmx">
+		<attributes>
+			<parameter name="color_method">dark</parameter>
+		</attributes>
+
+		<entity x="1" y="1">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.PeriodicAmbientSoundSource">
+				<parameter name="sound">coins-1, coins-2</parameter>
+				<parameter name="min">60</parameter>
+				<parameter name="max">120</parameter>
+				<parameter name="volume">10</parameter>
+			</implementation>
+		</entity>
+
+		<entity x="34" y="3">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">7</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+		<entity x="25" y="9">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">7</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+		<entity x="19" y="3">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">7</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+		<entity x="12" y="2">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">7</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+		<entity x="3" y="3">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">7</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+		<entity x="8" y="8">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">7</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+		<entity x="39" y="8">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">7</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+		<entity x="37" y="17">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">7</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+		<entity x="47" y="16">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">7</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+		<entity x="44" y="10">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">7</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+		<entity x="49" y="10">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-ognisko</parameter>
+				<parameter name="radius">7</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+
+		<portal x="36" y="1" ref="sk_exit">
+			<destination zone="0_pirates_island_w" ref="sk_entrance"/>
+		</portal>
+		<portal x="37" y="1" ref="sk_exit">
+			<destination zone="0_pirates_island_w" ref="sk_entrance"/>
+		</portal>
+	</zone>
+
+	<!-- tawerna 0 -->
+	<zone name="int_pirates_island_tavern_0" file="interiors/pirates/tavern_0.tmx">
+		<entity x="1" y="1">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.PeriodicAmbientSoundSource">
+				<parameter name="sound">creaky-door-1, creaky-door-2, coins-1, coins-2, window-close-1</parameter>
+				<parameter name="min">60</parameter>
+				<parameter name="max">120</parameter>
+				<parameter name="volume">5</parameter>
+			</implementation>
+		</entity>
+
+		<portal x="8" y="3" ref="tw_up">
+			<destination zone="int_pirates_island_tavern_1" ref="tw_down"/>
+		</portal>
+
+		<portal x="12" y="18" ref="tw1_exit">
+			<destination zone="0_pirates_island_w" ref="tw1_entrance"/>
+		</portal>
+		<portal x="27" y="18" ref="tw2_exit">
+			<destination zone="0_pirates_island_w" ref="tw2_entrance"/>
+		</portal>
+	</zone>
+
+	<!-- tawerna 1 -->
+	<zone name="int_pirates_island_tavern_1" file="interiors/pirates/tavern_1.tmx">
+		<entity x="1" y="1">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.PeriodicAmbientSoundSource">
+				<parameter name="sound">creaky-door-1, creaky-door-2, coins-1, coins-2, window-close-1</parameter>
+				<parameter name="min">60</parameter>
+				<parameter name="max">120</parameter>
+				<parameter name="volume">5</parameter>
+			</implementation>
+		</entity>
+
+		<portal x="9" y="3" ref="tw_down">
+			<destination zone="int_pirates_island_tavern_0" ref="tw_up"/>
+		</portal>
+	</zone>
+
+	<!-- mały domek -->
+	<zone name="int_pirates_island_tiny_house" file="interiors/pirates/tiny_house.tmx">
+		<portal x="4" y="6" ref="th_exit">
+			<destination zone="0_pirates_island_w" ref="th_entrance"/>
+		</portal>
+	</zone>
+
+	<!-- weaponshop -->
+	<zone name="int_pirates_island_weaponshop" file="interiors/pirates/weaponshop.tmx">
+		<entity x="10" y="3">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.LoopedAmbientSoundSource">
+				<parameter name="sound">pol-lava</parameter>
+				<parameter name="radius">10</parameter>
+				<parameter name="volume">15</parameter>
+			</implementation>
+		</entity>
+
+		<portal x="9" y="11" ref="wp_exit">
+			<destination zone="0_pirates_island_w" ref="wp_entrance"/>
+		</portal>
+	</zone>
+
+	<!-- bar -->
+	<zone name="int_pirates_island_bar" file="interiors/pirates/bar.tmx">
+		<entity x="1" y="1">
+			<implementation class-name="games.stendhal.server.entity.mapstuff.sound.PeriodicAmbientSoundSource">
+				<parameter name="sound">creaky-door-1, creaky-door-2, coins-1, coins-2, window-close-1</parameter>
+				<parameter name="min">60</parameter>
+				<parameter name="max">120</parameter>
+				<parameter name="volume">5</parameter>
+			</implementation>
+		</entity>
+
+		<portal x="14" y="26" ref="b1_exit">
+			<destination zone="0_pirates_island_w" ref="b1_entrance"/>
+		</portal>
+		<portal x="15" y="26" ref="b2_exit">
+			<destination zone="0_pirates_island_w" ref="b2_entrance"/>
+		</portal>
+	</zone>
+</zones>

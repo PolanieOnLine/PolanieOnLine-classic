@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="1">
+ <tileset firstgid="1" name="collision" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="../../tileset/logic/collision.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="2" name="grey_stone_stairs" tilewidth="32" tileheight="32" tilecount="6" columns="3">
+  <image source="../../tileset/building/stairs/grey_stone_stairs.png" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="8" name="brown" tilewidth="32" tileheight="32" tilecount="5" columns="5">
+  <image source="../../tileset/ground/brown.png" trans="ff00ff" width="160" height="32"/>
+ </tileset>
+ <tileset firstgid="13" name="pol_smoki" tilewidth="32" tileheight="32" tilecount="16" columns="8">
+  <image source="../../tileset/logic/creature/pol_smoki.png" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="29" name="chaos" tilewidth="32" tileheight="32" tilecount="7" columns="7">
+  <image source="../../tileset/logic/creature/chaos.png" width="224" height="32"/>
+ </tileset>
+ <tileset firstgid="36" name="portal" tilewidth="32" tileheight="32" tilecount="16" columns="8">
+  <image source="../../tileset/logic/portal.png" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="52" name="int_sandstone" tilewidth="32" tileheight="32" tilecount="15" columns="3">
+  <image source="../../tileset/building/wall/int_sandstone.png" width="96" height="160"/>
+ </tileset>
+ <layer id="1" name="0_floor" width="128" height="128">
+  <data encoding="base64" compression="zlib">
+   eJztw0ENAAAMA6F717/gCRkkrJqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqrvH8FogB8=
+  </data>
+ </layer>
+ <layer id="2" name="1_terrain" width="128" height="128">
+  <data encoding="base64" compression="zlib">
+   eJzt21uO2zAMBVAuqp1On1D3v6nGHwFSIXYci37qCDi/gwwvRTuy8xERHxfyefM15q9y8+MAnxs9gB4gz594b5XQA1fy7gwYVgk9cCV6gHevA8MqoQfm+Hnza8RR6rdkBgzr9wE++1Hdc/87Ub8Sx+kHM2C73KfquVcfmAE52S/JvV4l9rlemAH7Zz+1Sqxb6yX5D6v3GbBF9vdVYr0ecA3YN/svN98fjGVRYr0eWDIDes0/K/t77t+qv/8Z431QYp0ecA+wbq3qNWRf514bm8tr7DvXgHky9v6c7KdyKXGcGdBT/llz/92aPctljbrLP78+GTWT/zHskf/YzJH/tjK/782p2avz5BK59wBL/79e8s/a+8Oqa1ZnXWJeFpm1dwa4Tf71vX/LXJH/+fKv69Xyd7Nqf5QePLKl5yNT9Wq9pyjRfg/Q+hl6yX/QOgPq2Z8xU1rqn3FPK//ltcrIv8SyGbDXWdaZteT17Mw3656ixHs9kPn8au459hW03AM82yeZ3ylLTL8z9Pg+6pbnGFezpAfG9klm/vUq8X8/rPGeSo/533tg6j2N+xp7vr9F/muv3mb/VB+MeVWfM+ff697PdNb87f2+87f3c2SdKW657P1cZ5sB9n6/+dv7+c5yDZB93z1g7vfbA/Z+vz0g++17YM7Z8trr1dk11+uDx9+hyv0Y1u4DmZ/D47Omll6of2su8/N59dyx5ZkkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHB+/wBOhVKD
+  </data>
+ </layer>
+ <layer id="3" name="2_object" width="128" height="128">
+  <data encoding="base64" compression="zlib">
+   eJztzrkNACAQBDHE23/HbAdE6BJbmnxaAwAAAAAAAAAAAHjraaRZPUKJlXY61SMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwFcXmKEAHA==
+  </data>
+ </layer>
+ <layer id="4" name="3_roof" width="128" height="128">
+  <data encoding="base64" compression="zlib">
+   eJztwQEBAAAAgJD+r+4ICgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoADwAB
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="128" height="128">
+  <data encoding="base64" compression="zlib">
+   eJzt2MEJgDAUBcE0kBIMqHf7L88OAobAg+9MBXve1gAA6rvSAQAAAAWNdAAAAEyc6QAAKOxJBwDwWU8HAMAGdzoAAAAA2OJIB7DMnwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB/eQGlTwEA
+  </data>
+ </layer>
+ <layer id="7" name="collision" width="128" height="128" opacity="0.4">
+  <data encoding="base64" compression="zlib">
+   eJzt0kFuwzAQA0Dn/5/uB9oiiWWTKw+BORmQJe6+juN4bejdpO+JHcAOkJ3/UXBX7AB2gOz8j4L7YgemmNLfp0nft93EPifeuc3ZTLp7uus2V6b1/unOW9yRxneke2+wIu+e2/aWdPdpZ/PNP5rek+5/99nbgV5ncvZ/Te9Kz2Ha7L/tbMUZ5p+f/bedrTjD/M3f/Lvn/9v3T88w/45u/sq78z9zzl3vS89k2vybu2+4Q7MVWXluw/vSM5m2A63zb7jDBGdy1z6l37Sz1V2dTfI9K/4/zeqeVsTs+3fgyvn/d37j3u1gVU9X5Y5/pWfQ4Gw/U5PufRdTk+5tFxOT7mwnE5PubDeTku5qR5OS7mpHU5LuaWftSffzBM1Jd/MUjUl38jRNSXfxZMmk3879e5B+J/fvQfpN3LsL6XsDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHCtH9q7Oko=
+  </data>
+ </layer>
+ <layer id="8" name="protection" width="128" height="128">
+  <data encoding="base64" compression="zlib">
+   eJztwQEBAAAAgJD+r+4ICgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoADwAB
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="stendhal ../items.xsd ">
+
+	<item name="skromny posiłek">
+		<type class="misc" subclass="decent_meal" tileid="-1" />
+	    <description>Oto skromny posiłek dla Groongo Rahnnt. Dostarcz mu go szybko!</description>
+	    <implementation class-name="games.stendhal.server.entity.item.Item" />
+	    <attributes>
+	      <quantity value="1" />
+	    </attributes>
+	    <weight value="1.0" />
+	    <value value="1" />
+	    <equipable>
+		  <slot name="ground" />
+		  <slot name="content" />
+		  <slot name="lhand" />
+		  <slot name="rhand" />
+		  <slot name="bag" />
+		  <slot name="trade" />
+	    </equipable>
+	</item>
+
+	<item name="bulwa">
+		<type class="misc" subclass="bulb" tileid="-1"/>
+		<description>Oto bulwa. Można ją zasadzić wszędzie, ale rozwinie się tylko na urodzajnej glebie.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Seed"/>
+		<attributes>
+			<quantity value="1"/>
+			<menu value="Użyj|Użyj"/>
+		</attributes>
+		<weight value="0.01"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="nasionka">
+		<type class="misc" subclass="seed" tileid="-1"/>
+		<description>Oto nasionka. Zasadzisz je wszędzie, ale wyrosną wyłącznie na urodzajnej glebie.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Seed"/>
+		<attributes>
+			<quantity value="1"/>
+			<menu value="Użyj|Użyj"/>
+		</attributes>
+		<weight value="0.01"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="serce olbrzyma">
+		<type class="misc" subclass="giant_heart" tileid="-1"/>
+		<description>Oto serce olbrzyma. Jest dowodem na zwycięstwo w walce z olbrzymem. Wydaje się, że ma magiczne właściwości.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+		</attributes>
+		<weight value="0.01"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="kości do gry">
+		<type class="misc" subclass="dice" tileid="-1"/>
+		<description>Oto kości do gry. Niech szczęście cię nie opuści.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Dice"/>
+		<attributes/>
+		<weight value="0.05"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="karty do gry">
+		<type class="misc" subclass="cards" tileid="-1"/>
+		<description>Oto karty do gry. Zanim je rozdasz, przetasuj je.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+		</attributes>
+		<weight value="0.01"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="biała bila">
+		<type class="misc" subclass="whiteball" tileid="-1"/>
+		<description>Oto biała bila, która służy do gry w bilarda.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Ball"/>
+		<attributes/>
+		<weight value="0.05"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="pluszowy miś">
+		<type class="misc" subclass="teddy" tileid="-1"/>
+		<description>Oto pluszowy miś. Jest miękki i puszysty. Dzieci go uwielbiają.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<behavior class-name="games.stendhal.server.entity.item.behavior.MessagingUseBehavior">
+			<parameter name="public" value="!me przytulił pluszowego misia."/>
+			<parameter name="private" value="Pluszowy miś jest miękki i kojący."/>
+		</behavior>
+		<attributes>
+			<menu value="Przytul|Użyj"/>
+		</attributes>
+		<weight value="1.0"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="pułapka na gryzonie">
+		<type class="misc" subclass="rodent_trap" tileid="-1"/>
+		<description>Oto pułapka na gryzonie.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+		</attributes>
+		<weight value="0.05"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="truchło wampira">
+		<type class="misc" subclass="vampirette_entrails" tileid="-1"/>
+		<description>Oto truchło wampira. Jest dowodem na to, że wampir został zabity.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+		</attributes>
+		<weight value="0.01"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="truchło nietoperza">
+		<type class="misc" subclass="bat_entrails" tileid="-1"/>
+		<description>Oto truchło nietoperza. Cieknie z niego posoka i zalatuje smrodem.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+		</attributes>
+		<weight value="0.01"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="olejek do opalania">
+		<type class="misc" subclass="suntan_cream" tileid="-1"/>
+		<description>Oto olejek do opalania. Widnieje na nim ostrzeżenie, że zawartość jest śliska. Pachnie kokosem i bananem.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+		</attributes>
+		<weight value="0.01"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="kolorowe kulki">
+		<type class="misc" subclass="marbles" tileid="-1"/>
+		<description>Oto kolorowe kulki. Cóż, w każdym facecie zostaje coś z dziecka.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+		</attributes>
+		<weight value="0.01"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="prasowany tuńczyk">
+		<type class="misc" subclass="canotuna" tileid="-1"/>
+		<description>Oto prasowany tuńczyk. Och jaka szkoda, że nie wiesz jak się do niego dostać.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+		</attributes>
+		<weight value="0.01"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="zima zaklęta w kuli">
+		<type class="misc" subclass="snowglobe" tileid="-1"/>
+		<description>Oto zima zaklęta w kuli.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<behavior class-name="games.stendhal.server.entity.item.behavior.MessagingUseBehavior">
+			<parameter name="public" value="!me potrząśnij zimą zaklętą w kuli."/>
+			<parameter name="private" value="Płatki śniegu wirują dookoła i miękko opadają na dno kuli śnieżnej."/>
+		</behavior>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+			<menu value="Potrząśnij|Użyj"/>
+		</attributes>
+		<weight value="0.01"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<!--must be stackable as it is a produced item-->
+	<item name="szpulka do maszyny">
+		<type class="misc" subclass="bobbin" tileid="-1"/>
+		<description>Oto szpulka do maszyny do szycia.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+		</attributes>
+		<weight value="1.0"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="gruczoł jadowy">
+		<type class="misc" subclass="venom_gland" tileid="-1"/>
+		<description>Oto gruczoł jadowy. Jest wypełniony śmiertelną toksyną.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+			<autobind value=""/>
+		</attributes>
+		<weight value="0.03"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="pióro herszta hordy zbójeckiej">
+		<type class="misc" subclass="pioro_herszta" tileid="-1"/>
+		<description>Oto pióro herszta hordy zbójeckiej.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<quantity value="1"/>
+		</attributes>
+		<weight value="1.0"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="kostka">
+		<type class="misc" subclass="kostka" tileid="-1"/>
+		<description>Oto kostka. Niech sprzyja Tobie szczęście.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Kostka"/>
+		<attributes>
+		</attributes>
+		<weight value="0.05"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+		</equipable>
+	</item>
+
+	<item name="róg jednorożca">
+		<type class="misc" subclass="rog_jednorozca" tileid="-1"/>
+		<description>Oto róg jednorożca. Zaplanuj dobrze do czego go użyjesz.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+		</attributes>
+		<weight value="1.0"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="róg demona">
+		<type class="misc" subclass="rog_demona" tileid="-1"/>
+		<description>Oto róg demona. Wieść niesie, że zręczny kowal może przekuć go na niezwykły oręż.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+		</attributes>
+		<weight value="1.0"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="futro">
+		<type class="misc" subclass="pelt" tileid="-1"/>
+		<description></description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+		</attributes>
+		<weight value="1.0"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="skórzana nić">
+		<type class="misc" subclass="leather_thread" tileid="-1"/>
+		<description>Oto pasmo wytrzymałej skórzanej nici.</description>
+		<implementation class-name="games.stendhal.server.entity.item.StackableItem"/>
+		<attributes>
+			<quantity value="1"/>
+			<max_quantity value="2147483647"/>
+		</attributes>
+		<weight value="1.0"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+</items>

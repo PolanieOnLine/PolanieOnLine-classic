@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creatures xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="stendhal ../../creatures.xsd ">
+
+	<!-- START: kamienne -->
+	<creature name="kamień">
+		<type class="pol/kamienne" subclass="kamien" tileid="pol_kamienne.png:0"/>
+		<attributes>
+			<atk value="97"/>
+			<def value="97"/>
+			<hp value="12"/>
+			<speed value="0.3"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="20"/>
+		<experience value="280"/>
+		<respawn value="9600"/>
+		<corpse name="rocks"/>
+		<drops>
+			<item value="kamienie" quantity="[1,2]" probability="100.0"/>
+			<item value="kamyk" quantity="[1,19]" probability="100.0"/>
+			<item value="buty kamienne" quantity="[1,1]" probability="0.0001"/>
+			<item value="płaszcz kamienny" quantity="[1,1]" probability="0.0001"/>
+			<item value="kamienna tarcza" quantity="[1,1]" probability="0.5"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<sound value="pol-stones2"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+		</ai>
+	</creature>
+
+	<creature name="wieża">
+		<type class="pol/kamienne" subclass="wieza" tileid="pol_kamienne.png:1"/>
+		<attributes>
+			<atk value="750"/>
+			<def value="375"/>
+			<hp value="10285"/>
+			<speed value="0.2"/>
+			<size value="2,2"/>
+		</attributes>
+		<level value="200"/>
+		<experience value="10920"/>
+		<respawn value="13449"/>
+		<corpse name="giant_rocks"/>
+		<drops>
+			<item value="kamienie" quantity="[1,9]" probability="100.0"/>
+			<item value="kamyk" quantity="[1,39]" probability="100.0"/>
+			<item value="buty kamienne" quantity="[1,1]" probability="5.0"/>
+			<item value="płaszcz kamienny" quantity="[1,1]" probability="2.0"/>
+			<item value="kamienna tarcza" quantity="[1,1]" probability="5.0"/>
+			<item value="kamienna zbroja" quantity="[1,1]" probability="1.0"/>
+			<item value="kamienne rękawice" quantity="[1,1]" probability="1.0"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<sound value="pol-giant"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+			<profile name="rare"/>
+		</ai>
+	</creature>
+	<!-- END: kamienne -->
+
+	<!-- START: kamienne wielkie -->
+	<creature name="głaz">
+		<type class="pol/kamienne_wielkie" subclass="glaz" tileid="pol_kamienne_wielkie.png:0"/>
+		<attributes>
+			<atk value="140"/>
+			<def value="140"/>
+			<hp value="25"/>
+			<speed value="0.5"/>
+			<size value="2,2"/>
+		</attributes>
+		<level value="40"/>
+		<experience value="540"/>
+		<respawn value="12200"/>
+		<corpse name="giant_rocks"/>
+		<drops>
+			<item value="kamienie" quantity="[1,3]" probability="100.0"/>
+			<item value="kamyk" quantity="[1,59]" probability="100.0"/>
+			<item value="buty kamienne" quantity="[1,1]" probability="0.5"/>
+			<item value="płaszcz kamienny" quantity="[1,1]" probability="0.5"/>
+			<item value="kamienna tarcza" quantity="[1,1]" probability="1.0"/>
+			<item value="kamienna zbroja" quantity="[1,1]" probability="0.1"/>
+			<item value="kamienne rękawice" quantity="[1,1]" probability="0.2"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<sound value="pol-stones2"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+		</ai>
+	</creature>
+
+	<creature name="lawina kamienna">
+		<type class="pol/kamienne_wielkie" subclass="lawina_kamienna" tileid="pol_kamienne_wielkie.png:1"/>
+		<attributes>
+			<atk value="3000"/>
+			<def value="425"/>
+			<hp value="2000"/>
+			<speed value="0.9"/>
+			<size value="2,2"/>
+			<resistance value="50"/>
+		</attributes>
+		<level value="400"/>
+		<experience value="355555"/>
+		<respawn value="128200"/>
+		<corpse name="giant_rocks"/>
+		<drops>
+			<item value="kamyk" quantity="[1,39]" probability="100.0"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<sound value="pol-stones2"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+			<profile name="rare"/>
+		</ai>
+	</creature>
+
+	<creature name="olbrzymia wieża">
+		<type class="pol/kamienne_wielkie" subclass="wieza_olbrzymia" tileid="pol_kamienne_wielkie.png:2"/>
+		<attributes>
+			<atk value="2523"/>
+			<def value="750"/>
+			<hp value="20000"/>
+			<speed value="0.1"/>
+			<size value="4,3"/>
+			<resistance value="50"/>
+		</attributes>
+		<level value="300"/>
+		<experience value="188888"/>
+		<respawn value="26898"/>
+		<corpse name="giant_rocks"/>
+		<drops>
+			<item value="kamienie" quantity="[1,19]" probability="100.0"/>
+			<item value="kamyk" quantity="[1,69]" probability="100.0"/>
+			<item value="buty kamienne" quantity="[1,1]" probability="5.0"/>
+			<item value="płaszcz kamienny" quantity="[1,1]" probability="5.0"/>
+			<item value="kamienna tarcza" quantity="[1,1]" probability="5.0"/>
+			<item value="kamienna zbroja" quantity="[1,1]" probability="9.0"/>
+			<item value="spodnie kamienne" quantity="[1,1]" probability="1.0"/>
+			<item value="kamienne rękawice" quantity="[1,1]" probability="2.0"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<sound value="pol-giant"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+			<profile name="rare"/>
+		</ai>
+	</creature>
+	<!-- END: kamienne wielkie -->
+
+	<!-- START: pasterze -->
+	<creature name="pasterz drzew">
+		<type class="pol/pasterze_drzew" subclass="pasterz_drzew" tileid="pol_pasterze_drzew.png:0"/>
+		<description></description>
+		<attributes>
+			<atk value="919"/>
+			<def value="193"/>
+			<hp value="1250"/>
+			<speed value="0.1"/>
+			<size value="2,2"/>
+			<resistance value="100"/>
+		</attributes>
+		<level value="213"/>
+		<experience value="20000"/>
+		<respawn value="6200"/>
+		<corpse name="flora_ent" width="2" height="1"/>
+		<drops>
+			<item value="polano" quantity="[1,4]" probability="22.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="heal" params="30,50"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+	<!-- END: pasterze -->
+
+	<!-- START: ogniki -->
+	<creature name="błędny ognik">
+		<type class="pol/ogniki" subclass="bledny_ognik" tileid="pol_ogniki.png:0"/>
+		<description/>
+		<attributes>
+			<atk value="360"/>
+			<def value="55"/>
+			<hp value="620"/>
+			<speed value="1.0"/>
+			<size value="1,1"/>
+			<resistance value="100"/>
+			<visibility value="75"/>
+		</attributes>
+		<level value="77"/>
+		<experience value="3939"/>
+		<respawn value="1700"/>
+		<corpse name="other"/>
+		<drops>
+			<item value="miecz ognisty" quantity="[1,1]" probability="0.8"/>
+			<item value="ognista tarcza" quantity="[1,1]" probability="0.9"/>
+			<item value="ogniste rękawice" quantity="[1,1]" probability="0.0025"/>
+			<item value="ognisty amulet" quantity="[1,1]" probability="0.5"/>
+			<item value="ogniste buty" quantity="[1,1]" probability="0.5"/>
+			<item value="magia płomieni" quantity="[30,100]" probability="40.0"/>
+		</drops>
+		<equips/>
+		<abilities>
+			<damage type="fire"/>
+			<susceptibility type="ice" value="1.1"/>
+			<susceptibility type="fire" value="0.9"/>
+		</abilities>
+		<ai>
+			<says>
+				<sound value="pol-ognisko"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="attack weakest"/>
+		</ai>
+	</creature>
+
+	<creature name="błękitny ognik">
+		<type class="pol/ogniki" subclass="blekitny_ognik" tileid="pol_ogniki.png:1"/>
+		<description/>
+		<attributes>
+			<atk value="401"/>
+			<def value="61"/>
+			<hp value="820"/>
+			<speed value="1.0"/>
+			<size value="1,1"/>
+			<resistance value="100"/>
+			<visibility value="75"/>
+		</attributes>
+		<level value="111"/>
+		<experience value="5959"/>
+		<respawn value="1900"/>
+		<corpse name="other"/>
+		<drops>
+			<item value="miecz lodowy" quantity="[1,1]" probability="5.0"/>
+			<item value="lodowa tarcza" quantity="[1,1]" probability="1.0"/>
+			<item value="lodowe rękawice" quantity="[1,1]" probability="0.025"/>
+			<item value="lodowy amulet" quantity="[1,1]" probability="0.3"/>
+			<item value="lodowe buty" quantity="[1,1]" probability="0.5"/>
+			<item value="magia deszczu" quantity="[30,100]" probability="40.0"/>
+		</drops>
+		<equips/>
+		<abilities>
+			<damage type="ice"/>
+			<susceptibility type="ice" value="0.9"/>
+			<susceptibility type="fire" value="1.1"/>
+		</abilities>
+		<ai>
+			<says>
+				<sound value="pol-ognisko"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="attack weakest"/>
+		</ai>
+	</creature>
+
+	<creature name="golem z lawy">
+		<type class="pol/ogniki" subclass="lava_golem" tileid="pol_ogniki.png:2"/>
+		<attributes>
+			<atk value="199"/>
+			<def value="44"/>
+			<hp value="397"/>
+			<speed value="0.3"/>
+			<size value="1,1"/>
+			<resistance value="100"/>
+			<visibility value="100"/>
+		</attributes>
+		<level value="39"/>
+		<experience value="821"/>
+		<respawn value="1999"/>
+		<corpse name="other"/>
+		<drops>
+			<item value="magia płomieni" quantity="[1,54]" probability="70.0"/>
+			<item value="ogniste rękawice" quantity="[1,1]" probability="0.0005"/>
+			<item value="ognisty amulet" quantity="[1,1]" probability="0.01"/>
+			<item value="ognista tarcza" quantity="[1,1]" probability="1.0"/>
+			<item value="ognista zbroja" quantity="[1,1]" probability="0.2"/>
+			<item value="ogniste buty" quantity="[1,1]" probability="1.0"/>
+			<item value="miecz ognisty" quantity="[1,1]" probability="10.0"/>
+			<item value="rubin" quantity="[1,1]" probability="0.0001"/>
+		</drops>
+		<equips/>
+		<abilities>
+			<damage type="fire"/>
+			<susceptibility type="ice" value="1.2"/>
+			<susceptibility type="fire" value="0.8"/>
+		</abilities>
+		<ai>
+			<says>
+				<sound value="pol-lava"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+			<profile name="heal" params="5,50"/>
+			<profile name="attack weakest"/>
+		</ai>
+	</creature>
+	<!-- END: ogniki -->
+
+	<!-- START: sniegowe -->
+	<creature name="lodowy starszy olbrzym">
+		<type class="pol/olbrzymy" subclass="lodowy_starszy_olbrzym" tileid="pol_olbrzymy.png:3"/>
+		<description>Oto lodowy starszy olbrzym. Jego skóra pokryta jest szadzią, a jego oddech jest niczym mroźny powiew północnego wiatru.</description>
+		<attributes>
+			<atk value="1836"/>
+			<def value="80"/>
+			<hp value="1728"/>
+			<speed value="1.0"/>
+			<size value="2,2"/>
+			<resistance value="100"/>
+			<visibility value="100"/>
+		</attributes>
+		<level value="240"/>
+		<experience value="112386"/>
+		<respawn value="15700"/>
+		<corpse name="giant_humanoid"/>
+		<drops>
+			<item value="wielki eliksir" quantity="[2,6]" probability="40.0"/>
+			<item value="serce olbrzyma" quantity="[1,1]" probability="85.0"/>
+			<item value="money" quantity="[100,3050]" probability="100.0"/>
+			<item value="lodowa zbroja" quantity="[1,1]" probability="2.0"/>
+			<item value="lodowy młot bojowy" quantity="[1,1]" probability="1.0"/>
+			<item value="hełm lodowy" quantity="[1,1]" probability="0.25"/>
+			<item value="lodowe rękawice" quantity="[1,1]" probability="0.075"/>
+			<item value="lodowa kusza" quantity="[1,1]" probability="0.85"/>
+			<item value="lodowe spodnie" quantity="[1,1]" probability="1.2"/>
+			<item value="lodowy płaszcz" quantity="[1,1]" probability="1.5"/>
+			<item value="lodowy amulet" quantity="[1,1]" probability="0.5"/>
+			<item value="lodowe buty" quantity="[1,1]" probability="0.5"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<damage type="ice"/>
+			<susceptibility type="ice" value="0.4"/>
+			<susceptibility type="fire" value="1.7"/>
+		</abilities>
+		<ai>
+			<profile name="brave"/>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+			<profile name="heal" params="10,75"/>
+		</ai>
+	</creature>
+
+	<creature name="kula śnieżna">
+		<type class="pol/sniegowe" subclass="kula_sniezna" tileid="pol_sniegowe.png:0"/>
+		<attributes>
+			<atk value="200"/>
+			<def value="200"/>
+			<hp value="72"/>
+			<speed value="0.7"/>
+			<size value="4,4"/>
+			<resistance value="100"/>
+			<visibility value="100"/>
+		</attributes>
+		<level value="80"/>
+		<experience value="920"/>
+		<respawn value="28200"/>
+		<corpse name="snowball"/>
+		<drops>
+			<item value="śnieżka" quantity="[9,33]" probability="100.0"/>
+			<item value="lodowe rękawice" quantity="[1,1]" probability="0.01"/>
+			<item value="hełm lodowy" quantity="[1,1]" probability="0.05"/>
+			<item value="lodowa tarcza" quantity="[1,1]" probability="10.0"/>
+			<item value="miecz lodowy" quantity="[1,1]" probability="1.0"/>
+			<item value="lodowe spodnie" quantity="[1,1]" probability="0.4"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<sound value="pol-snow"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+		</ai>
+	</creature>
+
+	<creature name="lawina">
+		<type class="pol/sniegowe" subclass="lawina" tileid="pol_sniegowe.png:1"/>
+		<attributes>
+			<atk value="3000"/>
+			<def value="425"/>
+			<hp value="2000"/>
+			<speed value="0.8"/>
+			<size value="2,2"/>
+			<resistance value="50"/>
+			<visibility value="100"/>
+		</attributes>
+		<level value="400"/>
+		<experience value="355555"/>
+		<respawn value="128200"/>
+		<corpse name="snowball"/>
+		<drops>
+			<item value="bryła lodu" quantity="[10,20]" probability="100.0"/>
+		</drops>
+		<equips/>
+		<ai>
+			<says>
+				<sound value="pol-snow"/>
+			</says>
+			<profile name="brave"/>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+			<profile name="rare"/>
+		</ai>
+	</creature>
+	<!-- END: sniegowe -->
+</creatures>

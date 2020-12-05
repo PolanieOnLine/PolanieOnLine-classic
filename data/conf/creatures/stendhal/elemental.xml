@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creatures xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="stendhal ../../creatures.xsd ">
+
+	<!-- START: air -->
+
+	<creature name="żywioł powietrza">
+		<type class="stendhal/elemental" subclass="air_elemental" tileid="elemental.png:4"/>
+		<description>Oto żywioł powietrza dzięki któremu czujesz rzeźki powiew na swoim czole.</description>
+		<attributes>
+			<atk value="409"/>
+			<def value="68"/>
+			<hp value="350"/>
+			<speed value="1.0"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="50"/>
+		<experience value="1750"/>
+		<respawn value="1660"/>
+		<corpse name="humanoid"/>
+		<drops>
+			<item value="money" quantity="[5,40]" probability="100.0"/>
+			<item value="mocne antidotum" quantity="[1,2]" probability="10.0"/>
+			<item value="hełm libertyński" quantity="[1,1]" probability="0.02"/>
+		</drops>
+		<equips>
+		</equips>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+			<profile name="active_idle"/>
+		</ai>
+	</creature>
+
+	<creature name="dżin">
+		<type class="stendhal/elemental" subclass="djinn" tileid="elemental.png:0"/>
+		<description>Oto dżin. Nie jest uwięziony w lampie ani butelce, a to znaczy, że ktoś wydał mu rozkaz by rozprawić się z tobą.</description>
+		<attributes>
+			<atk value="460"/>
+			<def value="74"/>
+			<hp value="400"/>
+			<speed value="1.0"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="60"/>
+		<experience value="2760"/>
+		<respawn value="1800"/>
+		<corpse name="small_boneless"/>
+		<drops>
+			<item value="money" quantity="[5,40]" probability="100.0"/>
+			<item value="antidotum" quantity="[2,5]" probability="10.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<susceptibility type="ice" value="0.9"/>
+			<susceptibility type="fire" value="0.9"/>
+		</abilities>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+			<profile name="active_idle"/>
+		</ai>
+	</creature>
+
+	<!-- END: air -->
+
+	<!-- START: earth -->
+
+	<creature name="nimfa">
+		<type class="stendhal/elemental" subclass="nymph" tileid="elemental.png:6"/>
+		<description>Oto kochająca naturę nimfa. Patrząc na nią zakłócasz jej kąpiel słoneczną i kontemlowanie śpiewu ptaków. Może lepiej zostaw ją w spokoju.</description>
+		<attributes>
+			<atk value="368"/>
+			<def value="61"/>
+			<hp value="300"/>
+			<speed value="0.9"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="44"/>
+		<experience value="1290"/>
+		<respawn value="1660"/>
+		<corpse name="humanoid"/>
+		<drops>
+			<item value="money" quantity="[5,30]" probability="100.0"/>
+			<item value="mocne antidotum" quantity="[1,2]" probability="50.0"/>
+			<item value="polano" quantity="[1,3]" probability="10.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<susceptibility type="fire" value="1.1"/>
+		</abilities>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+			<profile name="active_idle"/>
+		</ai>
+	</creature>
+
+	<creature name="żywioł ziemi">
+		<type class="stendhal/elemental" subclass="earth_elemental" tileid="elemental.png:1"/>
+		<description>Oto żywioł ziemi. Ziemia trzęsie się, gdy się po niej przechadza.</description>
+		<attributes>
+			<atk value="407"/>
+			<def value="66"/>
+			<hp value="350"/>
+			<speed value="1.0"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="50"/>
+		<experience value="1750"/>
+		<respawn value="1660"/>
+		<corpse name="humanoid"/>
+		<drops>
+			<item value="money" quantity="[5,40]" probability="100.0"/>
+			<item value="mocne antidotum" quantity="[1,3]" probability="20.0"/>
+			<item value="zboże" quantity="[10,50]" probability="30.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<!-- END: earth -->
+
+	<!-- START: fire -->
+
+	<creature name="żywioł ognia">
+		<type class="stendhal/elemental" subclass="fire_elemental" tileid="elemental.png:2"/>
+		<description>Oto żywioł ognia od którego bije gorąc. </description>
+		<attributes>
+			<atk value="411"/>
+			<def value="67"/>
+			<hp value="350"/>
+			<speed value="1.0"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="50"/>
+		<experience value="1750"/>
+		<respawn value="1660"/>
+		<corpse name="humanoid"/>
+		<drops>
+			<item value="money" quantity="[5,40]" probability="100.0"/>
+			<item value="mocne antidotum" quantity="[1,3]" probability="10.0"/>
+			<item value="ognista zbroja" quantity="[1,1]" probability="0.2"/>
+			<item value="ogniste spodnie" quantity="[1,1]" probability="0.4"/>
+			<item value="miecz ognisty" quantity="[1,1]" probability="0.1"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<damage type="fire"/>
+			<susceptibility type="ice" value="2.0"/>
+			<susceptibility type="fire" value="0.2"/>
+		</abilities>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+			<profile name="active_idle"/>
+		</ai>
+	</creature>
+
+	<!-- END: fire -->
+
+	<!-- START: ice -->
+
+	<creature name="legendarny żywioł lodu">
+		<type class="stendhal/elemental_legendary" subclass="elemental_legendary_ice" tileid="elemental.png:8"/>
+		<description>Oto legendarny żywioł lodu...</description>
+		<attributes>
+			<atk value="7900"/>
+			<def value="541"/>
+			<hp value="12000"/>
+			<speed value="1.0"/>
+			<size value="8,6"/>
+		</attributes>
+		<level value="400"/>
+		<experience value="570000"/>
+		<respawn value="140000"/>
+		<corpse name="puddle_light_blue_2x2"/>
+		<drops>
+			<item value="money" quantity="[3000,16000]" probability="100.0"/>
+			<item value="gigantyczny eliksir" quantity="[1,4]" probability="35.0"/>
+			<item value="wielki eliksir" quantity="[2,8]" probability="60.0"/>
+			<item value="mocne antidotum" quantity="[1,3]" probability="10.0"/>
+			<item value="miecz lodowy" quantity="[1,1]" probability="9.0"/>
+			<item value="lodowa zbroja" quantity="[1,1]" probability="2.0"/>
+			<item value="lodowy płaszcz" quantity="[1,1]" probability="1.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<damage type="ice"/>
+			<susceptibility type="ice" value="0.2"/>
+			<susceptibility type="fire" value="2.0"/>
+		</abilities>
+		<ai>
+			<says>
+				<noise state="idle follow fight" value="Zamrożę cię do szpiku kości."/>
+			</says>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="żywioł lodu">
+		<type class="stendhal/elemental" subclass="ice_elemental" tileid="elemental.png:5"/>
+		<description>Oto żywioł lodu, który powoduje, że przechodzą cię ciarki na plecach.</description>
+		<attributes>
+			<atk value="400"/>
+			<def value="61"/>
+			<hp value="350"/>
+			<speed value="1.0"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="50"/>
+		<experience value="1750"/>
+		<respawn value="1660"/>
+		<corpse name="humanoid"/>
+		<drops>
+			<item value="money" quantity="[5,40]" probability="100.0"/>
+			<item value="mocne antidotum" quantity="[1,3]" probability="10.0"/>
+			<item value="miecz lodowy" quantity="[1,1]" probability="0.01"/>
+			<item value="lodowa zbroja" quantity="[1,1]" probability="0.01"/>
+			<item value="lodowy płaszcz" quantity="[1,1]" probability="0.035"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<damage type="ice"/>
+			<susceptibility type="ice" value="0.2"/>
+			<susceptibility type="fire" value="2.0"/>
+		</abilities>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="lodowy olbrzym">
+		<type class="stendhal/giant_human" subclass="ice_giant" tileid="giant_human.png:2"/>
+		<description>Oto lodowy olbrzym. Jego skóra pokryta jest szadzią, a jego oddech jest niczym mroźny powiew północnego wiatru.</description>
+		<attributes>
+			<atk value="934"/>
+			<def value="102"/>
+			<hp value="2418"/>
+			<speed value="1.0"/>
+			<size value="2,2"/>
+		</attributes>
+		<level value="160"/>
+		<experience value="42500"/>
+		<respawn value="13700"/>
+		<corpse name="giant_humanoid"/>
+		<drops>
+			<item value="wielki eliksir" quantity="[1,4]" probability="50.0"/>
+			<item value="serce olbrzyma" quantity="[1,1]" probability="85.0"/>
+			<item value="money" quantity="[30,350]" probability="100.0"/>
+			<item value="lodowa zbroja" quantity="[1,1]" probability="1.5"/>
+			<item value="lodowy młot bojowy" quantity="[1,1]" probability="0.5"/>
+			<item value="hełm lodowy" quantity="[1,1]" probability="0.05"/>
+			<item value="lodowe rękawice" quantity="[1,1]" probability="0.05"/>
+			<item value="lodowa kusza" quantity="[1,1]" probability="0.5"/>
+			<item value="lodowy płaszcz" quantity="[1,1]" probability="0.65"/>
+			<item value="lodowe spodnie" quantity="[1,1]" probability="1.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<damage type="ice"/>
+			<susceptibility type="ice" value="0.4"/>
+			<susceptibility type="fire" value="1.7"/>
+		</abilities>
+		<ai>
+			<profile name="brave"/>
+			<profile name="animal"/>
+			<profile name="offensive"/>
+			<profile name="heal" params="5,50"/>
+		</ai>
+	</creature>
+
+	<!-- END: ice -->
+
+	<!-- START: water -->
+
+	<creature name="żywioł wody">
+		<type class="stendhal/elemental" subclass="water_elemental" tileid="elemental.png:3"/>
+		<description>Oto żywioł wody, który składa się z wody i różnych innych płynów.</description>
+		<attributes>
+			<atk value="403"/>
+			<def value="64"/>
+			<hp value="350"/>
+			<speed value="1.0"/>
+			<size value="1,1"/>
+		</attributes>
+		<level value="50"/>
+		<experience value="1750"/>
+		<respawn value="1660"/>
+		<corpse name="humanoid"/>
+		<drops>
+			<item value="money" quantity="[5,40]" probability="100.0"/>
+			<item value="mocne antidotum" quantity="[1,3]" probability="10.0"/>
+			<item value="okoń" quantity="[1,3]" probability="25.0"/>
+			<item value="makrela" quantity="[1,4]" probability="25.0"/>
+			<item value="hełm libertyński" quantity="[1,1]" probability="0.01"/>
+			<item value="lazurowy hełm" quantity="[1,1]" probability="0.2"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<susceptibility type="fire" value="1.2"/>
+			<susceptibility type="water" value="0.7"/>
+		</abilities>
+		<ai>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="patrolling"/>
+			<profile name="active_idle"/>
+		</ai>
+	</creature>
+
+	<!-- END: water -->
+
+	<!-- START: wood -->
+
+	<creature name="drzewiec">
+		<type class="stendhal/ent" subclass="treant" tileid="ent.png:2"/>
+		<description>Oto drzewiec. Najpierw pomyślałeś, że to drzewo, ale po chwili okazało się, że się porusza!</description>
+		<attributes>
+			<atk value="588"/>
+			<def value="37"/>
+			<hp value="2000"/>
+			<speed value="0.1"/>
+			<size value="5,3"/>
+		</attributes>
+		<level value="80"/>
+		<experience value="5920"/>
+		<respawn value="2820"/>
+		<blood name="green" />
+		<corpse name="leafy_5x3" harmless="leafy_5x3" width="5" height="3" />
+		<drops>
+			<item value="money" quantity="[50,70]" probability="100.0"/>
+			<item value="duży eliksir" quantity="[1,2]" probability="20.0"/>
+			<item value="polano" quantity="[1,4]" probability="60.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<susceptibility type="fire" value="1.1"/>
+		</abilities>
+		<ai>
+			<says>
+				<sound value="snap-branch-1" />
+				<sound value="creak-tree-2" />
+				<sound value="shake-leaves-1" />
+			</says>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="heal" params="15,50"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="uschły drzewiec">
+		<type class="stendhal/ent" subclass="old_ent" tileid="ent.png:1"/>
+		<description>Oto uschły drzewiec. Wiele lat widział i wiele przeżył nawałnic. Widzisz jak jest stary bo opadły z niego liście, a i niejedna gałąź już się złamała.</description>
+		<attributes>
+			<atk value="573"/>
+			<def value="128"/>
+			<hp value="400"/>
+			<speed value="0.2"/>
+			<size value="2,2"/>
+		</attributes>
+		<level value="83"/>
+		<experience value="6540"/>
+		<respawn value="3010"/>
+		<blood name="green" />
+		<corpse name="flora_ent" harmless="flora_ent" width="2" height="1"/>
+		<drops>
+			<item value="money" quantity="[30,50]" probability="100.0"/>
+			<item value="duży eliksir" quantity="[1,2]" probability="30.0"/>
+			<item value="polano" quantity="[1,3]" probability="70.0"/>
+			<item value="pieczarka" quantity="[3,5]" probability="20.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<susceptibility type="fire" value="1.3"/>
+		</abilities>
+		<ai>
+			<says>
+				<sound value="snap-branch-1" />
+				<sound value="creak-tree-2" />
+			</says>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="heal" params="15,50"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<creature name="drzewcowa">
+		<type class="stendhal/ent" subclass="entwife" tileid="ent.png:3"/>
+		<description>Oto żona drzewca. Jest mocniejsza i żyje w grupach w starodawnym lesie.</description>
+		<attributes>
+			<atk value="719"/>
+			<def value="93"/>
+			<hp value="1250"/>
+			<speed value="0.4"/>
+			<size value="5,3"/>
+		</attributes>
+		<level value="113"/>
+		<experience value="15000"/>
+		<respawn value="3200"/>
+		<blood name="green" />
+		<corpse name="leafy_5x3" harmless="leafy_5x3" width="5" height="3"/>
+		<drops>
+			<item value="pieczarka" quantity="[1,6]" probability="50.0"/>
+			<item value="duży eliksir" quantity="[2,3]" probability="10.0"/>
+			<item value="polano" quantity="[2,6]" probability="70.0"/>
+			<item value="zboże" quantity="[5,20]" probability="30.0"/>
+			<item value="por" quantity="[3,20]" probability="10.0"/>
+			<item value="kalafior" quantity="[5,20]" probability="25.0"/>
+			<item value="marchew" quantity="[3,24]" probability="20.0"/>
+			<item value="jabłko" quantity="[2,8]" probability="20.0"/>
+		</drops>
+		<equips>
+		</equips>
+		<abilities>
+			<susceptibility type="fire" value="1.2"/>
+		</abilities>
+		<ai>
+			<says>
+				<sound value="snap-branch-1" />
+				<sound value="creak-tree-2" />
+				<sound value="shake-leaves-1" />
+			</says>
+			<profile name="brave"/>
+			<profile name="offensive"/>
+			<profile name="human"/>
+			<profile name="heal" params="15,50"/>
+			<profile name="patrolling"/>
+		</ai>
+	</creature>
+
+	<!-- END: wood -->
+
+</creatures>

@@ -1,0 +1,743 @@
+Changelog
+---------
+1.15
+*klient*
+- Zaimplementowano kolejne dwie nowe warstwy personalizacji swojego awatara w grze (oczy & usta)
+- Zmniejszono ilość głów oraz ciał do wyboru w personalizacji bohatera
+- Poprawiono graficznie głowy i ciała
+
+*świat*
+- Dodano grupowe zadanie na budowę corocznego festiwalu Mine Town Revival Weeks
+- Dodano nowe przedmioty: miecz mainiocyjski, pierścień niewidzialności, latarenka
+
+*chat*
+- Wprowadzono zamiany na naszym Discordzie: https://discord.gg/xtDnVna
+
+*kod*
+- Przeniesiono konfiguratory sztyletów do osobnego pliku XML (daggers.xml)
+- Zoptymalizowano kod
+
+*naprawiono błędy*
+- Poprawiono niektóre mapy
+- Poprawiono nazwę przedmiotu z "miecz dusz" na "sztylet dusz"
+- Naprawiono osiągnięcie "Kołysząc się na Jabłkach"
+- Naprawiono pozycję teleportu do kuźni w Warszawie
+- Naprawiono pozycję teleportu wyjściowego w int_deniran_weapons_shop
+- Naprawiono osiągniecie za odwiedzenie wszystkich map nadmorskiej krainy, z założenia niedostępne mapy już nie zaliczają się do tej puli map do odwiedzenia
+- Naprawiono błąd, który bez końca wypełniał zwłoki Tom'a w zadaniu na poszukiwanie towarzyszy w Kanmararn
+
+
+1.14
+*klient*
+- Dodano nowe grafiki chatek
+- Dodano nową grafikę przedmiotu: "magiczna tarcza płytowa"
+
+*świat*
+- Dodano nowego NPC: Kowal Inpraf
+- Dodano nowe mapy: (19)
+	- 0_krakow_swamp
+	- 0_krakow_swamp_nw
+	- 0_krakow_swamp_ne
+	- 0_krakow_wisla_e2
+	- 0_krakow_wawel_e2
+	- 0_warszawa_n
+	- 0_warszawa_ne
+	- 0_warszawa_e
+	- 0_warszawa_se
+	- 0_gdansk_outside
+	- 0_gdansk_coast_w
+	- 0_gdansk_coast_e
+	- 0_gdansk_forest_e2
+	- 0_gdansk_forest_e3
+	- 0_gdansk_forest_w2 (mapa niedostępna - las)
+	- 0_gdansk_forest_s_w2 (mapa niedostępna - las)
+	- 0_gdansk_forest_s2_w2 (mapa niedostępna - las)
+	- 0_gdansk_forest_s3_w
+	- 0_gdansk_forest_s3_w2
+	- int_warszawa_blacksmith
+- Przerobiono mapy: (8)
+	- 0_gdansk_road_n
+	- 0_gdansk_road_s
+	- 0_dragon_land_n
+	- 0_dragon_knights
+	- 0_dragon_knights_s
+	- 0_dragon_knights_forest
+	- 0_dragon_knights_forest_w
+	- 0_dragon_knights_forest_s
+	- 0_dragon_knights_forest_sw
+- Poprawiono mapy wizualnie w taki sposób, aby pasowały do nowych map
+- Poprawiono nazwy kierunków map Warszawy
+
+*kod*
+- Zaimplementowano nową funkcję, która umożliwia udoskonalić przedmiot opisany jako ImprovableItem
+- Dodano do konfiguratora przedmiotów nowy atrybut: max_improves (maksymalny "poziom" udoskonalenia)
+
+Lista przedmiotów podlegających udoskonaleniu: https://docs.google.com/spreadsheets/d/1k6V4fTStLuGRat0TON4MJfGfeUqMvTE__G1EmU08KYs
+
+
+1.13.1
+*świat*
+- krasnal biegnie szybciej
+- krasnal starszy biegnie wolniej
+
+*naprawiono błędy*
+- Naprawiono zadawanie obrażeń z broni zasięgowej (s2)
+
+
+1.13
+*świat*
+- Zmieniono tekstowy opis sklepu Jagny na graficzny
+- Poprawnio niektóre mapy
+
+*marauroa*
+- Ogólna optymalizacja silnika gry
+- Poprawiono łączność oraz przesyłanie danych do bazy danych (optymalizacja)
+
+*naprawiono błędy*
+- Potencjalnie naprawiono strzelanie na serwerze s2
+- Naprawiono naliczanie punktów ATK za strzelanie z łuku na serwerze s2
+- Naprawiono osiągnięcie 'Gruboskórny Zamęt'
+
+
+1.12
+*klient*
+- Dodano nowe pliki graficzne (przedmiotów/gui/npc/potworów)
+- Zmieniono wygląd: lekkiej oraz zwykłej kuszy, pasa kolczego, złotego pasa kolczego,
+pasa skórzanego, wzmocnionego pasa skórzanego, pasa olbrzymiego, lodowego amuletu, ognistego amuletu,
+pomidora, opieńka miodowego, polana
+ 
+*świat*
+- Dodano nowe NPC: (2)
+	- Anastazja (szwalnia w Zakopane)
+	- Eltefia (domek w Warszawie)
+- Dodano nowe zadanie: (2)
+	- "Kolekcjoner Rękawic" - Anastazja
+	- "Kolekcjoner Pasów" - Eltefia
+- Dodano nowe pomieszczenie w Warszawie
+- Dodano nowe przedmioty: (19)
+	- automatyczna kusza (800 punktów wytrzymałości)
+	- automatyczna kusza A (1400 punktów wytrzymałości)
+	- automatyczna kusza A+ (3600 punktów wytrzymałości)
+	- lodowy pas, ognisty pas, pas barbarzyńcy,
+		pas kamienny, pas lazurowy, pas chaosu,
+		pas mainiocyjski, pas xenocyjski, pas zabójcy
+	- rękawice zabójcy, rękawice szmaragdowe
+	- ogniste spodnie, ognista zbroja, ogniste buty, lodowe buty
+	- amulecik z mithrilu
+- Dodano nowe osiągnięcia: (8)
+	- "Pomocnik w Deathmatchu"
+	- "Kompan w Deathmatchu"
+	- "Eskortnik w Deathmatchu"
+	- "Magiczne Zaopatrzenie"
+	- "Magiczny Zaklinacz"
+	- "Głodomor"
+	- "Producent Eliksirów"
+	- "Spokojny Sen"
+- Dodano dodatkową nagrodę za 4 oraz 5 odrodzenie u Yereny
+- Dodano graficzny przegląd ofert w Sukiennicy
+- Dodano możliwość zdobycia jabłek z potwora "drzewcowa" [2-8]
+- Ceny w większości sklepów NPC zostały poprawione
+- Zmniejszono szansę na zdobycie sztylecika z mithrilu
+- Wzmocniono: miecz z mithrilu, ognisty miecz demonów, lodową kuszę, kuszę łowcy,
+	kuszę, pierścienie klasowe
+- Osłabiono: lekką kuszę
+- Poprawiono nazwy niektórym przedmiotom
+- Zbalansowano statystyki wszystkich pasów (oraz dodano atak niektórym pasom)
+	oraz niektóre rękawice, naszyjniki, spodnie, zbroje i płaszcze
+- Zniesiono minimalny poziom wszystkim złotym ciupagom oraz pierścieniom klasowym
+- Zwiększono szansę na zdobycie zwierzęcych skór [lwa, tygrysa oraz białego tygrysa] z 1% do 5%
+
+*serwer*
+- Dodano 2 nowe skrypyty dla administratorów (alterkill & inspectkill)
+- Przeniesiono konfigurowanie sklepów z pliku JAVA do XML (w data/conf)
+- Zwiększono limit tworzenia postaci na jednym koncie POL z 4 do 8
+
+*kod*
+- Dodano nowy profil dla stworów nazwany "immortal"; potwory z tym profilem są ignorowane w bestiariuszu
+	jak i w zabójstwach oraz nie pokazuje aktualnego poziomu w opisie stwora.
+- Wyrównano części dziesiętne w konfiguratorach przedmiotów zachowując odpowiedni opis
+
+*naprawiono błędy*
+- Poprawiono niektóre mapy
+- Poprawiono wyglądy nowych NPC dodanych w wersji 1.11
+- Naprawiono brakujących nowych NPC z wersji 1.11
+- Naprawiono sklep u NPC Klaasa
+- Naprawiono pozycję NPC Caroline
+- Naprawiono dymki z tekstem (od czasu do czasu dymek był zbyt mały)
+- Naprawiono sklepy w Sukiennicy (u Waldka oraz rybaka Miłorada) 
+- Przywrócono brakujący przedmiot: "jabłko niezgody"
+- Wprowadzono poprawki gramatyczne
+
+
+1.11
+*klient*
+- Dodano nowy strój do wypożyczenia
+- Dodano pasek zdrowia w lewym panelu
+- Dodano nową opcję w ustawieniach (możliwość włączenia/wyłączenia paska zdrowia w lewym panelu)
+- Magiczny bilet zyskał nową grafikę
+
+*świat*
+- Dodano nowych NPC:
+	- Harley (Lombard w Deniran)
+	- Sawyer (Lombard w Deniran)
+	- Raven (Sklep z bronią w Deniran)
+- Dodano nowe osiągnięcia: (2)
+	- "Imperialistyczny Dominator"
+	- "Imperialistyczny Dyktator"
+- Dodano nowy przedmiot: "wzmocniony pierścień imperialny"
+- Dodano wiele nowych map/pomieszczeń
+- Mały pegaz od teraz ucieka podczas atakowania
+
+*kod*
+- Wykonano nową klasę dla pierścienia szmaragdowego w celu optymalizacji klasy Ring
+oraz samej animacji pierścieni
+- Optymalizacja wsparcia dla języku Lua
+
+*naprawiono błędy*
+- Poprawiono ścieżkę prowadzącą do dojo w lesie Nalwor
+- Poprawiono niektóre mapy
+- Poprawiono nieco listę w bestiariuszu (rzadkie stworzenia są na samym końcu)
+- Naprawiono sprzedawców nasion
+- Naprawiono zadanie "Zabij Wrogą Armię": wszyscy nowi Blordrougth są naliczani
+
+
+1.10.1
+*naprawiono błędy*
+- Naprawiono błąd w lokalnej bazie danych z kolumną odpowiedzialną za pasy w grze
+- Naprawiono pasy w samej grze
+- Poprawiono opisy niektórych NPC'tów
+
+
+1.10
+*klient*
+- Dodano nowe grafiki przedmiotów/potworów/npc/gui
+- Dodano grafikę otwieranej bramy na obydwóch strzelnicach (Nalwor & Kraków)
+- Dodano parę nowych strojów do wypożyczenia
+- Dodano kilka nowych dźwięków dla stworzeń
+- Dodano listę zabitych już potworów (w pojedynkę / w grupie)
+- Dodano komunikat dźwiękowy o wbiciu wyższego poziomu umiejętności
+- Dodano nowe dźwięki dla potwora: "wilkołak"
+- Poprawiono kolory kosy, pordzewiałej kosy, złotych ciupag (z wąsami!), rękawic chaosu
+- Rozjaśniono nieco sloty w ekwipunku
+- Odświeżono grafiki przedmiotów:
+	- pas z mithrilu, czarny pas, czarny pierścień
+- Przetłumaczono na angielski pliki graficzne pasów
+
+*świat*
+- Dodano nowe NPC:
+	- Zelan (Atlantyda)
+	- Jimbo (Deniran)
+	- Akutagawa (Nalwor forest - dojo)
+	- Omura Sumitada (Nalwor forest - dojo)
+	- Lovena (Deniran)
+	- Pierre (Deniran)
+- Dodano nowe zadania:
+	- "Rogi jednorożca dla Zelana"
+- Dodano nowe regiony/mapy:
+	- wnętrza budynków w Deniran
+	- Atlantyda
+	- -5 oraz -6 poziom jaskiń Deniran
+- Dodano nowe przedmioty: (16)
+	- pierścień spokoju, pierścień imperialny
+	- sztabka platyny, złoże platyny
+	- futro, skórzana nić, obrotowy nóżyk
+	- magiczne spodnie płytowe, magiczne buty płytowe
+	- złota kosa, kosa z mithrilu, miecz treningowy
+	- buty krasnoludzkie, sztylecik z mithrilu, miecz z mithrilu
+	- rękawice elfickie
+- Dodano nowe potwory: (24)
+	- słoń z rogami, słoń musth, mamut włochaty
+	- demon wody, wodny skarabeusz, mały skarabeusz
+	- trujący grzybek, olbrzymi gnom, olbrzymia panna gnom
+	- centaur słoneczny, centaur lodowy, król centaurów
+	- jednorożec biały, jednorożec czarny, jednorożec złoty
+	- mały pegaz, pegaz brązowy, pegaz kościsty, pegaz hebanowy
+	- nietoperz olbrzymi, nietoperz wampir olbrzymi
+	- niedźwiedź biały, neo kraken, purpurowy smok
+- Dodano nowe osiągnięcia: (46)
+	- "Gdzieś jest Szczęśliwa Godzina"
+	- "Dawid kontra Goliat"
+	- "Niebiański Gniew"
+	- "Srebrny Pocisk"
+	- "Człowiek z zachodu"
+	- "Speleolog"
+	- "Złoty Prysznic"
+	- "Serowy Czarodziej"
+	- "Stado Szynek"
+	- "Zielony Kciuk"
+	- "Ziołolecznik"
+	- "Serenada Syren"
+	- "Imperialistyczny Sługus"
+	- "Imperialistyczny Żołnierz"
+	- "Królewsko Obdarowany"
+	- "Kołysząc się na Jabłkach"
+	- "Głębinowy Rybak"
+	- "Apokalipsa Zombi"
+	- "Nuggetsy z Kurczaka"
+	- "Gruboskórny Zamęt"
+	- "Serafiny mu Niestraszne"
+	- "Dedykowany Archeolog"
+	- "Zdrowie Najważniejsze"
+	- "Wanilia czy Czekolada"
+	- "Czekoladowy Raj"
+	- "Miłośnik Hotdogów"
+	- "Serowy Handlarz"
+	- "Zwierzęce Paznokietki"
+	- "Skórnik"
+	- "Kanapkowicz"
+	- "Działalność Rybacka"
+	- po 5 osiągnięć dla każdej statystyki (atk, obr i str)
+- Usunięto takie osiągnięcia jak: (2)
+	- "Diabeł Wcielony"
+	- "Łowca Mrocznych Aniołów"
+- Zmieniono nazwy przedmiotom:
+	- "elficki kapelusz" -> "kapelusz elficki"
+	- "futro" (jeden z płaszczy) -> "futrzany płaszcz"
+	- "pas zbójecki" -> "pas zbójnicki"
+- Dodano komunikat o osiągnięciu danego limitu zużyć broni
+- Dodano obok strzelnicy, w lesie Nalwor dojo, w którym można trenować umiejętność ataku
+- NPC Lupos skupuje kapelusz elficki
+- NPC Tolimir oraz Chester umożliwiają naprawienie łuku treningowego
+- Ilość zużyć łuku treningowego zmalała do 1,500
+- Zmniejszono koszt trenowania na strzelnicy u Chestera (Nalwor forest) do 5,000
+- Zmniejszono czas oczekiwania na kolejny trening na obydwóch strzelnicach (Nalwor & Kraków)
+- Zwiększono szansę na zdobycie przedmiotu "magiczny płaszcz" z Blordrougtów ~0.1%-0.5%, oraz "rękawice wampirze" z 0.04% na 0.075%
+- Zmieniono nieco statystyki prawie wszystkim rękawicom oraz dodano niektórym minimalny poziom użycia
+- Sporo mniejszych poprawiek na mapach obydwóch światów
+
+*kod*
+- Dodano wsparcie dla języka Lua
+- Dodano wsparcie dla portali schodów w kafelkach z ciągłym ruchem
+- Cień wroga/stwora można ustawić za pomocą wartości "shadow" pod znacznikiem "type"
+- Elementy z atrybutem "active_idle" będą cyklicznie odtwarzać animacje, nawet jeśli zostaną zatrzymane
+- Można wykonać akcję "/removedetail", aby ręcznie usunąć warstwę szczegółów z postaci
+- Minimapa rozpoznaje drzwi jako portal
+- Status niszczenia broni został zmodyfikowany do % szans na zniszczenie się przedmiotu po osiągnięciu limitu zużyć broni
+
+*baza danych*
+- Zaktualizowano bazę marauroa do wersji 3.9.8
+
+*naprawiono błędy*
+- Naprawiono drzwi & drzwi zamknięte, które nie obsługują ciągłego ruchu
+- Naprawiono niemożność ukończenia zadania "Pułapki dla Klaasa", gdy aktywowano zadanie "Pierścień Antyjadowy"
+- Naprawiono niemożność wejścia do aptekarza jeśli zadanie "Pułapki dla Klaasa" zostało wznowione
+- Naprawiono animowanie się pierścieni pod nadaną klasą "ring"
+- Naprawiono reakcję Edgarda podczas trwania zadania na pierścień rycerza na słowo "przypomnij"
+- Naprawiono tablicę Joachima w Gdańsku, która nie pokazywała rzeczywistego sklepiku co można u niego sprzedawać
+- Naprawiono wypożyczalnię kostiumów w magicznym mieście
+- Naprawiono błędy lokalnego serwera, działającym na h2 (brak kolumny ratk oraz zbyt mała długość opisów obszarów(mapek) w bazie)
+- Nieśmiertelne potwory nie są już wymagane do zdobycia osiągnięcia "Legenda" oraz "Wojownik Drużyny"
+- Usunięto wiele wiadomości o tym, że nie jest się już zszokowanym
+- Poprawiono opisy armii Blordrougthów
+- Poprawiono oraz dodano opisy dla niektórych pasów i innych przedmiotów
+
+
+1.09.5
+*klient*
+- Dodano/Odświeżono bardzo dużo grafik potworów/przedmiotów
+- Po kliknięciu monet ze zwłok zostaną przeniesione nie do plecaka, a do swojego slota w eq (gdy mamy włożony choć 1 pieniążek w tym slocie)
+
+*świat*
+- Zmieniono nazwy potworom takim jak:
+	- mermaid -> syrenka
+	- ametystowa mermaid -> syrena ametystowa
+	- szmaragdowa mermaid -> syrena szmaragdowa
+	- rubinowa mermaid -> syrena rubinowa
+	- szafirowa mermaid -> syrena szafirowa
+- NPC D J Smith sprzedaje shuriken (77), płonący shuriken (99) oraz włócznie (110)
+
+*naprawiono błędy*
+- Naprawiono niszczenie się drewnianego sztylecika
+- Naprawiono pierścień skorupy żółwia, który nie dawał bonusu na drugim palcu
+- Naprawiono wyświetlanie się osiągnięcia w kliencie po zakończeniu danego etapu odrodzenia
+- Naprawiono wyswietlanie się osiągnięcia w kliencie za osiągniętą wagę danego przygarniętego zwierzęcia
+- Naprawiono wyświetlanie się osiągnięcia w kliencie za przygarnięte zwierzątko
+
+
+1.09
+Zaktualizowano do najnowszej wersji Stendhala 1.32
+
+*klient*
+- Dodano oraz odświeżono wiele grafik (npc/potwory/przedmioty/gui)
+	* npc: Juhas, Gaździna Jadźka, Wikary, Radomil, Ojciec Honorat
+	* potwory: szczur, szczur jaskiniowy, krwiożerczy szczur, szczur zombie,
+		wściekły szczur, dzik
+	* jedzenie: banan, kokos, jajo wielkanocne, małe jajo wielkanocne, gruszka, granat,
+		cytryna, zielone jabłuszko, ser, duży ser, osełka masła
+	* zasoby: gadzie jajo, złote jajo, koński włos, pazur arktycznego smoka,
+		kieł tygrysi, kieł wilczy
+	* zwoje: bilet turystyczny
+	* miecze: bułat, nożyk
+	* pierścienie: pierścień skorupy żółwia, złoty pierścień, srebrny pierścień
+	* ikona gracza online/offline na liście znajomych, ikona płaszcza w eq gracza
+	* oraz wiele innych grafik na mapach
+- Dodano wiele nowych dźwięków potworów
+	* 5 różnych dźwięków dla wszystkich potworów typu mermaid
+	* 5 różnych dźwięków dla syren, wysokich syren oraz uzbrojonych syren
+	* 2 różne dźwieki dla lamii
+- Poprawiono rysowany cień u szczurów
+- Poprawiono system ukrywania strojów po wyborze ciała kawalerzysty (nie będzie nam usuwać wcześniejszego outfitu),
+oraz po wyborze ciała szlamu nie będzie rysowane ubranie
+
+*świat*
+- Dodano nowe zadanie na pierścień antyjadowy
+- Dodano kilka nowych przedmiotów:
+	* antyjad (przedmiot zadaniowy na pierścień antyjadowy)
+	* nożyk (na miejsce wcześniejszego mieczyka - 7/3)
+	* drewniany sztylecik (1/1 + 250 użyć)
+	* pierścień skorupy żółwia (+1 def)
+	* duży ser
+- Dodano nowy budynek w Zakopane (w południowej części zakopane_s): int_zakopane_sewing_house_0 oraz int_zakopane_sewing_house_1
+- Dodano nowy sklep skupu rękawic (w nowym budynku)
+- Dodano 8 nowych zagadek w hell'u
+- Dodano 5 nowych osiągnięć za odradzanie u Yereny
+- Dodano bonus ataku/obrony za dany etap odradzania (to nie jest w postaci punktów umiejętności!)
+- Rozbudowano zadanie na reset poziomu do 5 etapów
+- Po wykonaniu danego etapu[1-5] na zresetowanie poziomu zostaniemy przeteleportowani do int_zakopane_home
+- Poprawiono dialogi w zadaniu na zresetowanie poziomu
+- Poprawiono statystyki oraz drop potwora: legendarny żywioł lodu
+- Zmieniono parametry mieczyka (+2 ataku więcej - czyli 9/3)
+- Zwiększono nieco możliwe wartości money do zdobycia u banity & banitki
+
+*naprawiono błędy*
+- Naprawiono niewyświetlające się zagadki w hell'u
+
+
+1.08.1
+*klient*
+- Dodano muzykę w zamku Kalavan, w mieście Kalavan, w mieście Kirdneh, na rynku Ados
+- Zmniejszono ilość dostępnych specjalnych strojów
+- Odświeżono kilka grafik
+
+*świat*
+- Legendarny żywioł lodu doznał zmian w statystykach
+
+*kod*
+- Zoptymalizowano kod nowego systemu outfitów
+
+*naprawiono błędy*
+- Naprawiono świąteczną mapę int_zakopane_bank_0
+
+
+1.08
+*klient*
+- Dodano muzykę w tle w mieście Fado
+- Rozbudowano nową funkcję rysowania cieni pod obiektami
+
+*świat*
+- Przystosowano niektóre mapy zakopanego do Xmas
+- Zbalansowano mnożnik ilości punktów defensywnych z setów
+- McPegleg skupuje teraz spodnie lazurowe
+- Dodano więcej możliwości zdobycia przedmiotu: 'środek uspokajający'
+- Dodano respy nowych potworów (z poprzedniej aktualizacji 1.07): gryf oraz harpia - 0_gdansk_forest_s2_w, legendarny żywioł lodu: 0_ados_rock
+- Dodano prawie cały nowy set przedmiotów (set królewski)
+
+*naprawiono błędy*
+- Naprawiono znacznik oznaczający, że zadanie można powtórzyć dla: 'Gra w zgadywanie' & 'Znajdź Szczurze Dzieci'
+- NPC'ty, którzy odwracają się podczas kolizji, teraz zatrzymują się, jeżeli nie będą mieli dokąd pójść
+
+
+1.07.1
+Wersja poprawiająca działanie systemu limitów u burmistrzów następująco:
+	zamiast niedawania punktów umiejętności za osiągnięcie danego poziomu ataku, to każdy osobno skill, który osiągnie dany limit (atak - 110; obr - 140; str - 90),
+	zostanie nałożone ograniczenie, które zmniejszy o 75% możliwych punktów do zdobycia.
+	Przykładowo:
+		Osiągneliśmy obrone na poziomie 140 to każda kolejna misja u burmistrza ograniczy ilość możliwych do zdobycia punktów dla tej umiejętności o 75%,
+		natomiast reszta będzie miała normalny przelicznik dopóki nie osiągnięmy wcześniej wyznaczonego limitu.
+
+*klient*
+- Dodano kilka nowo-odświeżonych grafik
+
+*naprawiono błędy*
+- Naprawiono mapę -1_semos_caves
+
+
+1.07
+*klient*
+- Dodano widoczność NPC'tów na minimapie
+- Dokonano kolejnych zmian w wyglądach postaci
+- Odświeżono kolory pióra azazela oraz archanioła ciemności
+- Zmieniono wygląd pasów takich jak:
+	* pas karmazynowy,
+	* pas elficki,
+	* pas krasnoludzki,
+	* pas wampirzy oraz
+	* złoty pas
+- Zmieniono wygląd wszystkich kanibali
+- Ogromna ilość poprawek w wyglądach NPC
+- Oraz różne mniejsze poprawki przedmiotów i nie tylko...
+
+*świat*
+- Dodano 3 nowe potwory: legendarny żywioł lodu, gryf oraz harpia
+- Dodano 4 nowe przedmioty: rękawice chaosu, rękawice mainiocyjskie, rękawice xenocyjskie oraz pas cieni
+- Dodano możliwość zdobycia zaklęcia pustelnika w grze
+- Joachim (rynek w Gdańsku) skupuje ryby ze świata POL
+- Można sprzedać skrzydlice na rynku w Kirdneh za 120 money
+- Po wyborze ciała kawalerzysty (w zmianach swojego wyglądu), automatycznie zostanie nam zdjęta reszta ubrań
+- Zwiększono szansę na zdobycie setu zabójcy z samuraja
+
+*naprawiono błędy*
+- Naprawiono ścieżki graficzne do wszystkich odmian mermaid
+- Naprawiono wyświetlanie wcześniej zebranych klejnotów w dzienniku zadań
+- Poprawiono grafikę przedmiotu "zielone jabłuszko" oraz kolory wampirzych rękawic
+- Poprawiono opis lodowych rękawic
+- Koniczynki stackują się ze sobą (dopiero po automatycznemu podpisaniu przedmiotu)
+
+
+1.06
+Zaktualizowano do najnowszej wersji Stendhala
+
+*klient*
+- Dodano opcje pokazywania cieni pod pewnymi obiektami (niektórymi potworami/npc'tami/graczami)
+- Dodano nowe dźwięki dla smoków
+- Dodano dwie nowe grafiki przedmiotów
+- Zmiany dot. outfitów typu Charas (dodano czapki, maski i nie tylko...)
+- Zmieniono wygląd kapelusza safari
+- Poprawiono dźwięk pirackiego śmiechu
+- Poprawiono wymiary grafiki wianka
+
+*świat gry*
+- Dodano dwa nowe naszyjniki
+- Dodano drop czarnego pierścienia oraz pierścienia z mithrilu odpowiednio u azazela i serafina
+- Dodano nowe osiągnięcia za wykonywanie co dwudniowych zadań na przedmiot w Gdańsku
+- W zadaniu na płaszcz kapturka (u Balbiny) rozbudowano dziennik zadań (jest więcej informacji o etapach)
+- Przerobiono osiągnięcie za zwiedzenie wszystkich budynków w Zakopane (ignoruje możliwe domki do kupienia)
+- Zmieniono system nagród u wszystkich burmistrzów (gdy postać osiągnie dany limit siły to ten NPC przestanie nagradzać go w postaci punktów umiejętności)
+	- Zakopane oraz Semos: do 100 ataku
+	- Ados: do 105 ataku
+	- Kuźnice oraz Gdańsk: do 110 ataku
+	- Wieliczka oraz Kirdneh: do 115 ataku
+
+*naprawiono błędy*
+- Naprawiono różne odmiany potworów mermaid
+- Naprawiono wymiary grafiki przedmiotu "czterolistna koniczyna"
+- Naprawiono błąd z komunikatem o braku domyślnego wyglądu klienta
+- Waga "Baby Dragon'a" nie może spaść poniżej minimalnej wartości (1)
+
+
+1.05.5
+*klient*
+- Zmniejszono rozmiary grafik obu statków, co sprawia, że pasek zdrowia jest niżej (tylko dla tych outfitów)
+- Zmieniono wygląd balonów
+- Usunięto zielone pixele w grafice potwora 'upadły duch truskull'
+
+*świat gry*
+- Dodano możliwość wydropienia hełmu xenocyjskiego, co umożliwia jednocześnie zdobycie osiągnięcia za zdobycie całego zestawu xeno
+- Dodano możliwość wydropienia zbroji z mithrilu
+- Dodano u złotnika (Jerzego) w Gdańsku książkę opisującą co on skupuje
+- Zmieniono ilość punktów defensywnych w zbrojach, butach, hełmach, spodniach oraz zwiększono odporności niektórym przedmiotom
+- Utworzono ścieżkę w 0_gdansk_forest_se umożliwiającą odblokowanie osiągnięcia "Nadmorska kraina"
+- Usunięto kolizję na mapie 1_koscielisko_podzamcze (w lesie), by móc przejść do NPC Cień
+
+*naprawiono błędy*
+- Naprawiono grafikę żmiji (błąd z klienta 1.05)
+- Naprawiono osiągnięcie za maksymalny poziom oraz "Pogromca smoków"
+- Naprawiono zadanie PaperChase
+- Poprawiono nazwy przedmiotów w cotygodniowym zadaniu na przedmiot w muzeum Kirdneh
+
+
+1.05
+Zaktualizowano do najnowszej wersji Stendhala 1.31.1
+
+*klient*
+- Dodano łącznie 22 grafiki dla nowych potworów + odświeżono wygląd ptaka dodo
+- Dodano kilka nowych grafik NPC
+- Dodano wiele nowych dźwięków
+
+*świat gry*
+- Dodano nowe zadanie na Halloween
+- Dodano tymczasowo możliwość zdobycia strasznych dyń u: szczura, starców, wieśniaków, gajowych, wszystkich zbójników (leśni oraz górscy) w tym banitów
+- Dodano kilku nowych NPC
+- Dodano do gry dwa nowe bractwa piratów (lutin oraz truskull; co daje łącznie 22 nowych potworów!)
+- Dodano wyspę piratów lutinów (od 71 do 110 poziomu (przedział levelowy lutinów)) oraz podziemia należące do truskull (od 120 do 193 poziomu (przedział levelowy truskull))
+- Dodano trzy nowe płaszcze dla każdego z pirackich bractw
+- Dodano możliwość dopłynięcia promem na piracką wyspę (z Gdańska)
+- Dodano warunki pogodowe w nadmorskiej krainie
+- Dodano muzykę w tle w Gdańsku oraz w jaskiniach
+- Piraci wykrzykują swe monologi
+
+*serwer*
+- Zaktualizowano marauroa do wersji 3.9.7
+
+*naprawiono błędy*
+- Klient będzie ignorował błędy, które informują o braku pewnych dźwięków pogody (mgła oraz śnieg)
+- Poprawiono kolizję statku płynącego z Gdańska do Warszawy (i na odwrót)
+- Poprawiono wymiary grafiki pierścienia barona
+
+
+1.04
+Zaktualizowano do najnowszej wersji Stendhala 1.31
+
+*klient*
+- Dodano wiele nowych grafik NPC
+- Dodano kilka nowych grafik przedmiotów
+- Dodano kilka nowych strojów do wypożyczenia
+- Odświeżono grafiki czterech zwoi - tatrzański, krakowski, gdański, wieliczki
+
+*świat gry*
+- Dodano nowo-odświeżoną nadmorską krainę - Gdańsk
+- Dodano nową mapę w górnej części krakowa (0_krakow_n_w2) umożliwiającą przejście na pieszo do Gdańska
+- Dodano wiele nowych NPC
+- Dodano kilka nowych zadań oraz sklepów (nadmorska kraina)
+- Dodano podziemia w Gdańsku
+- Dodano kilka nowych przedmiotów (smoczy eliksir - 2400 HP, duży smoczy eliksir - 3000 HP oraz zwój gdańsk do gry)
+- Dodano możliwość wypożyczenia małego oraz dużego statku u Liliany jako kostium
+- Można wyprodukować smoczy eliksir u Agrypin'a (nowy budynek w Wieliczce) oraz duży smoczy eliksir u Aron'a (piwnica Aligerna)
+- Zwiększono ilość możliwego do zdobycia PD u potworów takich jak:
+	wilczykruk,
+	żółty glut,
+	czerwony glut,
+	Jožin z lesa,
+	Jožin z bažin,
+	coś niszczącego
+
+*kod gry*
+- Dodano nowe wydarzenie zatytułowane "50% więcej PD oraz 20% szybszy respawn potworów"
+
+*naprawiono błędy*
+- Naprawiono sklep u Balduina za wykonanie ostatniego zadania
+- Naprawiono nieśmiertelność wilkołaków szamanów
+- Poprawiono wypożyczanie kostiumów u Saski oraz Liliany
+- Poprawiono dialogi u Olmo (powinno bez problemu reagować na "uwędź 1 mięso wędzone" itd...)
+
+
+1.03
+*klient*
+- Dodano wiele nowych grafik
+- Poprawiono 'Wyróżnionych' oraz przycisk 'Pomoc'
+- Poprawiono linki w kliencie (przystosowane do nowej witryny)
+
+*świat gry*
+- Dodano wiele nowych NPC
+- Dodano kilka nowych sklepów oraz pomieszczeń w Wieliczce
+- Dodano nowe jaskinie w Wieliczce oraz -1_dragon_cave_s i -3_dragon_cave
+- Dodano nowe zadanie w mieście Deniran oraz trzy w Wieliczce (dwa powtarzalne (w tym nowy burmistrz) oraz jedno na złoty pierścień)
+- Dodano nowego potwora: kostucha złota (mała) [można ją znaleźć na mapach: 1_koscielisko_zamek, -1_koscielisko_coalmine, -1_wieliczka_salt_mines_se3, -3_zakopane_mines oraz int_dragon_knights_dungeons]
+- Dodano piekarnie w Deniran
+- Dodano możliwość zdobycia elfickiego kapelusza
+- Pierścień szmaragdowy już więcej nie wypadnie po śmierci
+- Zróżnicowano ceny niezapisanych zwoi (gdzieś jest taniej, a gdzie indziej drożej ;))
+- Zwiększono ilość możliwego zdobycia PD u potworów takich jak:
+	superczłowiek olbrzym,
+	mega mag,
+	czarny szkielet gigant,
+	książę szkieletów oraz wszystkie kostuchy wielkie
+	i wszystkie dwugłowe smoki
+
+*naprawiono błędy*
+- Poprawiono niektóre dialogi u Sally oraz Olmo
+- Poprawiono na niektórych mapach kolizje oraz podmieniono grafiki krzaczków itp...
+- Poprawiono jednoskę czasu dla zadania na złotą ciupagę z wąsem
+- Poprawiono ochronę (zielone pole na minimapie) na mapach Wieliczki
+- Nie można już zapisać zwoju w momencie znajdowania się w pułapce
+
+
+1.02.2
+Główna zmiana: nie trzeba mieć założonego pierścienia szmaragdowego na palcu!
+Przetestowałem tę zmianę na około 30 próbach, można mieć pierścionek schowany w rzemyku jak i w plecaku! :D
+
+*klient*
+- Zmieniono pozycję paska zdrowia u wszystkich pokutników
+- Poprawiono link dla przycisku 'Pomoc'
+
+*świat gry*
+- Aresztowanie gracza zmienia tymczasowo jego strój, aż do zakończenia jego kary
+- Szansa na drop ciupagi jest mniejsza
+- Zbalansowano nowe pierścionki (srebrny pierścień, złoty pierścień, pierścień z mithrilu oraz czarny pierścień)
+
+*naprawiono błędy*
+- Naprawiono umieranie postaci (każda śmierć nie niosła jakichkolwiek konsekwencji)
+- Przetłumaczono komunikat kiedy nasze zwierzątko głoduje
+
+
+1.02.1
+*świat gry*
+- Dodano nowy teleport na mapie dragon_land_s (teleportujący do dragon_cave)
+- Dodano nową mapę: -2_dragon_cave
+
+*naprawiono błędy*
+- Poprawiono niektóre tekstury na mapie dragon_land_n
+- Naprawiono zadanie u Króla Kraka
+- Naprawiono osiągniecia za ilość wykonanych zadań w kuźnicach
+- Przetłumaczono teksty u Kettah oraz u potwora 'kostucha różowa'
+
+
+1.02
+Zaktualizowano do najnowszej wersji Stendhala (nowe 3 poziomowe jaskinie w Deniran, drop zwoju Deniran, etc..)
+Wykonano masową zmianę parametrów przedmiotów oraz potworów (wykorzystano do tego stare pliki z wersji 0.30 POL'a),
+tzn. zostaną wgrane starsze statystyki [oprócz ciupag]
+
+*klient*
+- Dodano dużo nowych grafik
+
+*świat gry*
+- Dodano dwa nowe zadania [zadanie dla początkujących graczy w Zakopane oraz zadanie na złotą ciupagę z trzema wąsami]
+- Dodano rycerze w zamku ZRC
+- Dodano kilka nowych NPC
+- Dodano kilka nowych osiągnięć
+- Dodano wiele nowych pomieszczeń
+- Dodano kilka nowych map (3 nowe mapy w Zakopane, 3 nowe mapy w Krakowie [rozbudowano krakow_cave])
+- Dodano nowe przejście prowadzące do Wieliczki
+- Dodano nowe przedmioty: "kamienne rękawice", "magiczny płaszcz", "lodowy płaszcz", "lodowe spodnie"
+- Dodano drop nowych przedmiotów jak i dla zbójników górskich dodano możliwość zdobycia góralskich przedmiotów
+- Można kupić nowy zwój przenoszący do miasta Deniran u Juhasa za 700 money
+- Można na pieszo przyjść do Warszawy przez Kraków
+- Można sprzedawać owieczki w Zakopane
+- Zmieniono wizualnie górne mapy Krakowa
+- Zmieniono wizualnie niektóre mapy Wieliczki oraz mapy dragon_knights
+- Zmniejszono czas oczekiwania na kolejny bilet turystyczny do 12 godzin u Juhasa
+- Usunięto jeden respawn złotej śmierci w lochach dragon_knights
+- Przywrócono stare piętro w banku w Zakopane
+- Wszystkie ciupagi otrzymały wzmocnienie
+- Ponownie zmieniono wzór STR (wzór jest taki sam jak w przypadku ATK oraz DEF - tzn. im większy posiadamy poziom postaci tym więcej dostaniemy punktów doświadczenia do umiejętności)
+- Zadanie w Kuźnicach można robić co 2 dni (tak jak w założeniach miało być)
+
+*naprawiono błędy*
+- Dodano brakujący dźwięk węża
+- Naprawiono czas oczekiwania w zadaniach na różne przedmioty
+- Poprawiono ścieżkę grafiki dla hełmu zabójcy
+- Poprawiono grafiki kanibali
+- Poprawiono niektórym potworowom przenikanie oraz przezroczystość
+- Poprawiono osiągniecia: 'Wszędzie piasek?!', za wykonanie zadania w kuźnicach, 'Łowca mrocznych aniołów'
+- Potencjalnie poprawiono możliwość wypożyczenia specjalnych ubrań u Liliany oraz Saskia
+
+
+1.01.2
+Po wykonaniu zadania, srebrny pierścień zostanie od razu przypisany do postaci
+
+
+1.01.1
+*naprawiono błędy*
+- Naprawiono zadanie u Ceryla
+- Naprawiono zadanie u Cienia
+- Naprawiono przypadkowy błąd we wzorze liczący ilość punktów str
+- Naprawiono NPC Wikariego, Wagabundus, Gaździne Bożene
+- Poprawiono opis osiągnięcia 'Harcerz' oraz 'Farmer'
+
+
+1.01
+*klient*
+- Zmniejszono drgania kamery
+- Dodano 6 dodatkowych slotów dla plecaka oraz 4 dodatkowe sloty dla rzemyka
+
+*świat gry*
+- Dodano nową strzelnice w Krakowie oraz nowego NPC, który strzeże ją
+- Dodano możliwość zdobycia punktów STR (strzelania) w muzeum w Kirdneh (20% aktualnego xp w ratk) i w Kuźnicach u Sołtysa (20% aktualnego xp w ratk) oraz za osiągnięcie 150 poziomu i 350 poziomu (zadania na umiejętności)
+- Usunięto niebezpieczny respawn złotego rycerza w skarbcu zakopiańskiego banku
+- Poprawiono ceny w sklepach u Gulimo oraz Hagnurk (są bardziej przyjazne)
+- Nerf dla broni: piernacz
+- Buff dla broni: złota ciupaga, złota ciupaga z wąsem, złota ciupaga z dwoma wąsami, złota ciupaga z trzema wąsami, miecz elficki
+- Łuki, różdżki, strzały, bełty, magia itd... otrzymały buffa w postaci w ATK w statystykach (połowa wartości STR)
+
+*naprawiono błędy*
+- Naprawiono jeden z wózków na farmie w zadaniu 'Pomoc w żniwach', blisko Karla
+- Naprawiono tablice przy NPC o nazwie Woody
+- Naprawiono kości do gry
+- Naprawiono test u Drwala
+- Poprawiono opis osiągnięcia 'Prywatny detektyw'
+- Poprawiono ścieżki (chodzenia) niektórych NPC
+- Poprawiono linki
+
+
+1.00
+OFICJALNY START SERWERA POLANIEONLINE

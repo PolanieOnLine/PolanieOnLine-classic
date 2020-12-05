@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="stendhal ../items.xsd ">
+
+	<item name="miecz zaczepny">
+		<type class="sword" subclass="biting_sword" tileid="-1"/>
+		<description>Oto miecz zaczepny. Ostrze tego miecza zadaje śmiertelne szarpane rany.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="25"/>
+			<rate value="6"/>
+			<min_level value="35"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="130208"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="czarny miecz">
+		<type class="sword" subclass="black_sword" tileid="-1"/>
+		<description>Oto czarny miecz. Jego mrok z pewnością cię osłoni.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="40"/>
+			<rate value="7"/>
+			<min_use value="50"/>
+			<min_level value="100"/>
+		</attributes>
+		<weight value="9.0"/>
+		<value value="457142"/>
+		<damage type="dark"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="pałasz">
+		<type class="sword" subclass="broadsword" tileid="-1"/>
+		<description>Oto potężny pałasz. Przeciwnicy już widzą swoją śmierć.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="34"/>
+			<rate value="10"/>
+			<min_level value="10"/>
+		</attributes>
+		<weight value="8.0"/>
+		<value value="196520"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="pogromca">
+		<type class="sword" subclass="buster" tileid="-1"/>
+		<description>Oto pogromca z niszczycielskim, przedłużonym ostrzem.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="21"/>
+			<rate value="5"/>
+			<min_level value="40"/>
+			<max_improves value="4"/>
+		</attributes>
+		<weight value="5.0"/>
+		<value value="90535"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz chaosu">
+		<type class="sword" subclass="chaos_sword" tileid="-1"/>
+		<description>Oto miecz chaosu. Potężna broń, która nie tylko zabija potwory, ale jednocześnie zwraca ci zdrowie.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="32"/>
+			<rate value="9"/>
+			<lifesteal value="0.3"/>
+			<min_use value="40"/>
+			<min_level value="80"/>
+		</attributes>
+		<weight value="10.0"/>
+		<value value="182044"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz dwuręczny">
+		<type class="sword" subclass="claymore" tileid="-1"/>
+		<description>Ten miecz dwuręczny, który był używany przez górali z dalekiej krainy, gdzie mężczyźni biegają w spódnicach. :)</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="36"/>
+			<rate value="10"/>
+			<min_level value="75"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="109760"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="sztylet mroku">
+		<type class="sword" subclass="dark_dagger" tileid="-1"/>
+		<description>Oto sztylet mroku. Jest zaprojektowany tak, aby zadawać nim szybkie ciosy.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="8"/>
+			<rate value="2"/>
+			<min_use value="30"/>
+			<min_level value="60"/>
+			<max_improves value="3"/>
+		</attributes>
+		<weight value="0.2"/>
+		<value value="12800"/>
+		<damage type="dark"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="ognisty miecz demonów">
+		<type class="sword" subclass="demon_fire_sword" tileid="-1"/>
+		<description>Oto ognisty miecz demonów. Został wykradziony z najgłębszych czeluści tego świata.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="58"/>
+			<rate value="6"/>
+			<lifesteal value="0.3"/>
+			<min_use value="50"/>
+			<min_level value="300"/>
+			<max_improves value="6"/>
+		</attributes>
+		<weight value="12.0"/>
+		<value value="975560"/>
+		<damage type="fire"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz demonów">
+		<type class="sword" subclass="kilij" tileid="-1"/>
+		<description>Oto miecz demonów. Szkielety powróciły z piekieł z tym mieczem.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="22"/>
+			<rate value="6"/>
+			<min_level value="50"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="88733"/>
+		<damage type="fire"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz elfów ciemności">
+		<type class="sword" subclass="blooddrinker" tileid="-1"/>
+		<description>Oto miecz elfów ciemności.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="31"/>
+			<rate value="6"/>
+			<min_level value="85"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="248258"/>
+		<damage type="dark"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz elficki">
+		<type class="sword" subclass="elvish_sword" tileid="-1"/>
+		<description>Oto miecz elficki. Wygląda na to, że jest zrobiony z liścia!</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="16"/>
+			<rate value="4"/>
+			<lifesteal value="0.1"/>
+			<min_level value="30"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="219700"/>
+		<damage type="earth"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz ognisty">
+		<type class="sword" subclass="fire_sword" tileid="-1"/>
+		<description>Oto miecz ognisty. Kiedy nim wymachujesz wydaje się, jakby płonął.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="29"/>
+			<rate value="5"/>
+			<min_level value="45"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="156800"/>
+		<damage type="fire"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="złota klinga orków">
+		<type class="sword" subclass="golden_orc_sword" tileid="-1"/>
+		<description>Oto złota klinga orków. Wygląda na zadającą śmiertelne rany i jest także cenna.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="32"/>
+			<rate value="5"/>
+			<min_level value="180"/>
+		</attributes>
+		<weight value="8.0"/>
+		<value value="199650"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="półtorak">
+		<type class="sword" subclass="great_sword" tileid="-1"/>
+		<description>Oto półtorak. Ten rzadki, wielki miecz można dzierżyć w jednej lub obu rękach.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="60"/>
+			<rate value="15"/>
+			<min_level value="50"/>
+			<max_improves value="7"/>
+		</attributes>
+		<weight value="8.0"/>
+		<value value="303750"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz lodowy">
+		<type class="sword" subclass="ice_sword" tileid="-1"/>
+		<description>Oto miecz lodowy. Zmroziło cię na samą myśl, że to chyba najlepsza broń jaką można zdobyć.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="29"/>
+			<rate value="5"/>
+			<min_level value="45"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="174207"/>
+		<damage type="ice"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz cesarski">
+		<type class="sword" subclass="imperator_sword" tileid="-1"/>
+		<description>Oto miecz cesarski. Nie możesz odgadnąć z czego został zrobiony.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="14"/>
+			<rate value="3"/>
+			<min_level value="50"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="34300"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz nieśmiertelnych">
+		<type class="sword" subclass="magic_sword" tileid="-1"/>
+		<description>Oto miecz nieśmiertelnych. Ten oto miecz jest darem od bogów dla Wybrańca.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="35"/>
+			<rate value="6"/>
+		<min_level value="80"/>
+		</attributes>
+		<weight value="9.0"/>
+		<value value="357291"/>
+		<damage type="light"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="katana">
+		<type class="sword" subclass="katana" tileid="-1"/>
+		<description>Oto dalekowschodnia katana. Jej ostrze wydaje się zadawać śmiertelne rany.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="15"/>
+			<rate value="4"/>
+			<min_level value="20"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="51200"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="mieczyk">
+		<type class="sword" subclass="wooden_sword" tileid="-1"/>
+		<description>Oto tępy mieczyk, wykonany z dębowego drewna. Jak mocno zamachniesz to zaboli.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="9"/>
+			<rate value="3"/>
+		</attributes>
+		<weight value="0.2"/>
+		<value value="5716"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz leworęczny">
+		<type class="sword" subclass="l_hand_sword" tileid="-1"/>
+		<description>Oto miecz leworęczny. Musi być użyty z praworęcznym mieczem.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="12"/>
+			<def value="6"/>
+			<rate value="3"/>
+		<min_level value="80"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="33750"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="lhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="nihonto">
+		<type class="sword" subclass="nihonto" tileid="-1"/>
+		<description>Oto prawdziwy samurajski miecz nihonto z bardzo ostrym zakończeniem.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="20"/>
+			<rate value="4"/>
+			<min_level value="70"/>
+			<max_improves value="4"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="90535"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="klinga orków">
+		<type class="sword" subclass="orc_sword" tileid="-1"/>
+		<description>Oto klinga orków, jest ciężka i ma zabójczy wygląd.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="24"/>
+			<rate value="10"/>
+			<max_improves value="8"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="69120"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz orków">
+		<type class="sword" subclass="orcish_sword" tileid="-1"/>
+		<description>Oto miecz orków. Ten miecz orków jest niezdarnie wykuty i niezmiernie ciężki.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="38"/>
+			<rate value="9"/>
+			<min_level value="40"/>
+			<max_improves value="7"/>
+		</attributes>
+		<weight value="9.0"/>
+		<value value="304844"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz praworęczny">
+		<type class="sword" subclass="r_hand_sword" tileid="-1"/>
+		<description>Oto miecz praworęczny. Musi być użyty razem z leworęcznym mieczem.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="12"/>
+			<def value="6"/>
+			<rate value="3"/>
+		<min_level value="80"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="33750"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="rhand"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+		</equipable>
+	</item>
+
+	<item name="bułat">
+		<type class="sword" subclass="scimitar" tileid="-1"/>
+		<description>Ten saraceński bułat to dobra broń.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="14"/>
+			<rate value="4"/>
+			<min_level value="10"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="42187"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="krótki miecz">
+		<type class="sword" subclass="short_sword" tileid="-1"/>
+		<description>Oto zadbany krótki miecz, który doskonale nadaje się na każdą wyprawę.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="11"/>
+			<rate value="4"/>
+		</attributes>
+		<weight value="2.0"/>
+		<value value="16637"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz">
+		<type class="sword" subclass="sword" tileid="-1"/>
+		<description>Oto ostry miecz. Jeśli znajdziesz kupca, być może coś za niego zapłaci.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="12"/>
+			<rate value="4"/>
+			<min_level value="5"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="34300"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="krwiopijca">
+		<type class="sword" subclass="vampire_sword" tileid="-1"/>
+		<description>Oto osławiona krwiopijca, miecz który zabiera życie tym, których atakujesz.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="22"/>
+			<rate value="5"/>
+			<lifesteal value="0.1"/>
+			<min_level value="50"/>
+			<max_improves value="5"/>
+		</attributes>
+		<weight value="4.0"/>
+		<value value="98742"/>
+		<damage type="dark"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz xenocyjski">
+		<type class="sword" subclass="xeno_sword" tileid="-1"/>
+		<description>Oto miecz xenocyjski. Jest silny i lekki.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="38"/>
+			<rate value="6"/>
+			<min_level value="150"/>
+		</attributes>
+		<weight value="6.0"/>
+		<value value="457142"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz krasnoludów">
+		<type class="sword" subclass="dwarfish_sword" tileid="-1"/>
+		<description>Oto miecz krasnoludów. Dość krótkie ostrze w sam raz do walk w ciasnych korytarzach.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="17"/>
+			<rate value="6"/>
+		</attributes>
+		<weight value="0.2"/>
+		<value value="5400"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="krwawy miecz orków">
+		<type class="sword" subclass="orc_blood" tileid="-1"/>
+		<description>Oto krwawy miecz orków. Niejednego wroga rozpłatał na dwie połowy.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="33"/>
+			<rate value="9"/>
+			<lifesteal value="-0.2"/>
+			<min_level value="50"/>
+		</attributes>
+		<weight value="0.2"/>
+		<value value="5400"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="szczerbiec">
+		<type class="sword" subclass="polish_szczerbiec" tileid="-1"/>
+		<description>Oto szczerbiec. Miecz królów polskich.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="105"/>
+			<def value="7"/>
+			<rate value="12"/>
+			<min_use value="350"/>
+			<min_level value="500"/>
+			<max_improves value="6"/>
+		</attributes>
+		<weight value="0.2"/>
+		<value value="5400"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="maczeta">
+		<type class="sword" subclass="machete" tileid="-1"/>
+		<description>Oto maczeta. Idealna do walki i przedzierania się przez gąszcz lasu.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Item"/>
+		<attributes>
+			<atk value="21"/>
+			<rate value="5"/>
+		</attributes>
+		<weight value="0.2"/>
+		<value value="5400"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz cieni">
+		<type class="sword" subclass="shadow_sword" tileid="-1"/>
+		<description>Oto miecz cieni. Nawet gdy nosisz go w słońcu, półmrok skrywa jego ostrze.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="39"/>
+			<rate value="7"/>
+			<min_level value="30"/>
+			<max_improves value="1"/>
+		</attributes>
+		<weight value="9.0"/>
+		<value value="457142"/>
+		<damage type="dark"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="chopesz">
+		<type class="sword" subclass="ancient_egyptian_khopesh" tileid="-1"/>
+		<description>Oto chopesz. To niezwykłe ostrze pochodzi z kraju dziwnych piramid.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="35"/>
+			<rate value="6"/>
+			<max_improves value="6"/>
+		</attributes>
+		<weight value="0.2"/>
+		<value value="5400"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="ekskalibur">
+		<type class="sword" subclass="excalibur" tileid="-1"/>
+		<description>Oto wszechpotężny legendarny miecz ekskalibur. Miecz samego króla Artura, silny jak wszystko inne na ziemi.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="112"/>
+      		<rate value="4"/>
+	  		<lifesteal value="0.3"/>
+	  		<max_improves value="3"/>
+		</attributes>
+		<damage type="light"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz treningowy">
+		<type class="sword" subclass="training_sword" tileid="-1"/>
+		<description>Oto drewniany miecz treningowy, który nie nadaje się nawet do krojenia masła. Ale jest lekki i łatwy do machania.</description>
+		<implementation class-name="games.stendhal.server.entity.item.BreakableItem"/>
+		<attributes>
+			<atk value="0"/>
+			<rate value="1"/>
+			<durability value="1500"/>
+		</attributes>
+		<weight value="2.0"/>
+		<value value="1"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz z mithrilu">
+		<type class="sword" subclass="mithril_sword" tileid="-1"/>
+		<description>Oto miecz z mithrilu. Jakość jego najważniejszym atrybutem.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="51"/>
+			<rate value="5"/>
+			<min_level value="220"/>
+			<max_improves value="4"/>
+		</attributes>
+		<weight value="9.0"/>
+		<value value="457142"/>
+		<damage type="light"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+
+	<item name="miecz mainiocyjski">
+		<type class="sword" subclass="mainio_sword" tileid="-1"/>
+		<description>Oto miecz mainiocyjski.</description>
+		<implementation class-name="games.stendhal.server.entity.item.Improve"/>
+		<attributes>
+			<atk value="42"/>
+			<rate value="6"/>
+			<min_level value="165"/>
+			<max_improves value="2"/>
+		</attributes>
+		<weight value="9.0"/>
+		<value value="457142"/>
+		<damage type="light"/>
+		<equipable>
+			<slot name="ground"/>
+			<slot name="content"/>
+			<slot name="bag"/>
+			<slot name="trade"/>
+			<slot name="lhand"/>
+			<slot name="rhand"/>
+		</equipable>
+	</item>
+</items>
