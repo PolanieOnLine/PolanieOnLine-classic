@@ -465,7 +465,7 @@
 		<attributes>
 			<atk value="23"/>
 			<def value="2"/>
-			<rate value="3"/>
+			<rate value="2"/>
 			<lifesteal value="0.1"/>
 		</attributes>
 		<weight value="0.5"/>
