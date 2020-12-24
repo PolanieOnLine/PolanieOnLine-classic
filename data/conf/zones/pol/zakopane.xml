@@ -245,8 +245,11 @@
 			<destination zone="int_zakopane_townhall" ref="townhall_exit"/>
 		</portal>
 
-		<portal x="93" y="65" ref="chapel_entrance_1">
-			<destination zone="int_zakopane_chapel" ref="chapel_1_exit"/>
+		<portal x="108" y="58" ref="hospital_entrance_1">
+			<destination zone="int_zakopane_hospital" ref="hospital_1_exit"/>
+		</portal>
+		<portal x="109" y="58" ref="hospital_entrance_2">
+			<destination zone="int_zakopane_hospital" ref="hospital_2_exit"/>
 		</portal>
 
 		<portal x="124" y="88" ref="playroom_entrance">
@@ -666,17 +669,6 @@ Np. 25 klików = 1x Złota Skrzynia, 2x Srebrna Skrzynie oraz 5x Brązowa Skrzyn
 
 		<portal x="121" y="94" ref="sewing_entrance">
 			<destination zone="int_zakopane_sewing_house_0" ref="sewing_exit"/>
-		</portal>
-
-		<!-- po zmianach -->
-		<portal x="51" y="49" ref="hospital_entrance_1">
-			<destination zone="int_zakopane_hospital" ref="hospital_1_exit"/>
-		</portal>
-		<portal x="52" y="49" ref="hospital_entrance_2">
-			<destination zone="int_zakopane_hospital" ref="hospital_2_exit"/>
-		</portal>
-		<portal x="52" y="50" ref="hospital_entrance_3">
-			<implementation class-name="games.stendhal.server.entity.mapstuff.portal.OneWayPortalDestination"/>
 		</portal>
 
 		<portal x="102" y="42" ref="bank_entrace_1">
@@ -1518,13 +1510,13 @@ Np. 25 klików = 1x Złota Skrzynia, 2x Srebrna Skrzynie oraz 5x Brązowa Skrzyn
 		</entity>
 
 		<portal x="6" y="18" ref="hospital_1_exit">
-			<destination zone="0_zakopane_s" ref="hospital_entrance_1"/>
+			<destination zone="0_zakopane_c" ref="hospital_entrance_1"/>
 		</portal>
 		<portal x="7" y="18" ref="hospital_2_exit">
-			<destination zone="0_zakopane_s" ref="hospital_entrance_2"/>
+			<destination zone="0_zakopane_c" ref="hospital_entrance_2"/>
 		</portal>
-		<portal x="8" y="18" ref="hospital_3_exit">
-			<destination zone="0_zakopane_s" ref="hospital_entrance_3"/>
+		<portal x="8" y="18" ref="hospital_2_exit">
+			<destination zone="0_zakopane_c" ref="hospital_entrance_2"/>
 		</portal>
 	</zone>
 
